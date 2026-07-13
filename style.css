@@ -933,8 +933,8 @@ img{
 }
 /* Homepage Services Cards */
 #services .service-card {
-    background:#123B6D !important;
-    color:#ffffff !important;
+    background:#ffffff !important;
+    color:#123B6D !important;
     padding:30px 25px;
     border-radius:15px;
     font-size:18px;
