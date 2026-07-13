@@ -940,11 +940,11 @@ img{
     color:#ffffff;
 }
 .service-card {
-    background:red !important;
-    color:white !important;
+    background:#123B6D !important;
+    color:#ffffff !important;
 }
 
 .service-card h2,
 .service-card p {
-    color:white !important;
+    color:#ffffff !important;
 }
