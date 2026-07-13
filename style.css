@@ -59,10 +59,20 @@ nav a{
 /* Hero */
 .hero{
   text-align:center;
-  padding:10px 20px;
-  background:linear-gradient(135deg,#0B2E59,#18A7A7);
+  min-height:85vh;
+padding:20px;
+display:flex;
+justify-content:center;
+align-items:center;
+  background:linear-gradient(rgba(11,46,89,0.55), rgba(11,46,89,0.55)), url("hero.jpg") center/cover no-repeat;
   border-bottom:2px solid #D4AF37;
-box-shadow:0 8px 20px rgba(0,0,0,.15);
+  box-shadow:0 8px 20px rgba(0,0,0,.15);
+  color:#fff;
+}
+
+.hero-content{
+  max-width:700px;
+  margin:auto;
 }
 
 .hero h2{
