@@ -240,6 +240,17 @@ nav a:hover{
     transform:translateY(-8px);
     box-shadow:0 12px 25px rgba(0,0,0,.15);
 }
+.service-card,
+.service-card h3,
+.service-card p,
+.service-card a{
+    color:#ffffff !important;
+    text-decoration:none;
+}
+
+.service-card a:hover{
+    color:#ffffff !important;
+}
 #process {
     padding:90px 20px;
     background:#f8f9fc;
