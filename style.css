@@ -204,19 +204,12 @@ nav a:hover{
     font-size: 20px;
     margin: 0 0 10px;
 }
-#services {
+.services-section {
     padding: 80px 20px;
     background: #ffffff;
-    text-align: center;
 }
 
-#services h2 {
-    font-size: 36px;
-    color: #123B6D;
-    margin-bottom: 40px;
-}
-
-.services-grid {
+.services-section .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
@@ -232,22 +225,18 @@ nav a:hover{
     border-bottom:4px solid #D4AF37;
     box-shadow:0 8px 20px rgba(0,0,0,.10);
     transition:0.3s ease;
-    display:flex;
-    justify-content:center;
-    align-items:center;
     text-align:center;
-    min-height:120px;
+}
+
+.service-card h2,
+.service-card p {
+    color:#ffffff !important;
 }
 
 .service-card:hover {
     background:#18A7A7;
-    color:#ffffff !important;
     transform:translateY(-8px);
     box-shadow:0 12px 25px rgba(0,0,0,.15);
-}
-
-.service-card a:hover {
-    color:#ffffff !important;
 }
 #process {
     padding:90px 20px;
