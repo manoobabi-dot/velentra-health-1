@@ -58,14 +58,16 @@ nav a{
 
 /* Hero */
 .hero{
-background-image:url("hero.jpg") !important;
   text-align:center;
   min-height:85vh;
 padding:20px;
 display:flex;
 justify-content:center;
 align-items:center;
-  background:linear-gradient(rgba(11,46,89,0.55), rgba(11,46,89,0.55)), url("hero.jpg") center/cover no-repeat;
+  background:linear-gradient(rgba(11,46,89,0.55), rgba(11,46,89,0.55)), url("hero.jpg");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
   border-bottom:2px solid #D4AF37;
   box-shadow:0 8px 20px rgba(0,0,0,.15);
   color:#fff;
