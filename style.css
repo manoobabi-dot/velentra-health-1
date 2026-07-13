@@ -59,18 +59,15 @@ nav a{
 /* Hero */
 .hero{
   text-align:center;
-  min-height:85vh;
-padding:20px;
-display:flex;
-justify-content:center;
-align-items:center;
-   background-image:url("hero.jpg") !important;
-  background-size:contain;
-background-position:center center;
-background-repeat:no-repeat;
+  padding:0;
   border-bottom:2px solid #D4AF37;
   box-shadow:0 8px 20px rgba(0,0,0,.15);
-  color:#fff;
+}
+
+.hero-image{
+  display:block;
+  width:100%;
+  height:auto;
 }
 
 .hero-content{
