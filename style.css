@@ -241,6 +241,7 @@ nav a:hover{
     box-shadow:0 12px 25px rgba(0,0,0,.15);
 }
 .service-card,
+.service-card h2,
 .service-card h3,
 .service-card p,
 .service-card a{
