@@ -58,7 +58,7 @@ nav a{
 
 /* Hero */
 .hero{
-background:url("hero.jpg") center/cover no-repeat !important;
+background-image:url("hero.jpg") !important;
   text-align:center;
   min-height:85vh;
 padding:20px;
