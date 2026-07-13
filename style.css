@@ -216,8 +216,8 @@ nav a:hover{
 }
 
 .service-card {
-    background:#123B6D;
-    color:#ffffff !important;
+    background:#EAF6FF;
+    color:#123B6D !important;
     padding:30px 25px;
     border-radius:15px;
     font-size:18px;
@@ -230,7 +230,7 @@ nav a:hover{
 
 .service-card h2,
 .service-card p {
-    color:#ffffff !important;
+    color:#123B6D !important;
 }
 
 .service-card:hover {
