@@ -960,3 +960,7 @@ img{
     gap:20px;
     margin-top:30px;
 }
+section{
+    padding-top:80px;
+    padding-bottom:80px;
+}
