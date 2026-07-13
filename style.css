@@ -948,3 +948,26 @@ img{
 .service-card p {
     color:#ffffff !important;
 }
+/* Homepage Services Cards */
+#services .service-card {
+    background:#123B6D !important;
+    color:#ffffff !important;
+    padding:30px 25px;
+    border-radius:15px;
+    font-size:18px;
+    font-weight:600;
+    border-bottom:4px solid #D4AF37;
+    box-shadow:0 8px 20px rgba(0,0,0,.10);
+    transition:0.3s ease;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    min-height:120px;
+}
+
+#services .service-card:hover {
+    background:#18A7A7 !important;
+    color:#ffffff !important;
+    transform:translateY(-8px);
+}
