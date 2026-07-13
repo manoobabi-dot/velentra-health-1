@@ -224,7 +224,7 @@ nav a:hover{
 
 .service-card {
     background:#123B6D;
-    color:#ffffff;
+    color:#ffffff !important;
     padding:30px 25px;
     border-radius:15px;
     font-size:18px;
@@ -232,24 +232,21 @@ nav a:hover{
     border-bottom:4px solid #D4AF37;
     box-shadow:0 8px 20px rgba(0,0,0,.10);
     transition:0.3s ease;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    min-height:120px;
 }
 
 .service-card:hover {
     background:#18A7A7;
-    color:#ffffff;
+    color:#ffffff !important;
     transform:translateY(-8px);
     box-shadow:0 12px 25px rgba(0,0,0,.15);
 }
-.service-card,
-.service-card h2,
-.service-card h3,
-.service-card p,
-.service-card a{
-    color:#ffffff !important;
-    text-decoration:none;
-}
 
-.service-card a:hover{
+.service-card a:hover {
     color:#ffffff !important;
 }
 #process {
