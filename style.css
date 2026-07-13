@@ -936,3 +936,19 @@ img{
     background:#18A7A7;
     color:#ffffff;
 }
+.page-hero{
+    background:#123B6D;
+    color:#fff;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.services-section{
+    padding:80px 20px;
+    background:#f8f9fc;
+}
+
+.services-section .service-card h2,
+.services-section .service-card p{
+    color:#ffffff;
+}
