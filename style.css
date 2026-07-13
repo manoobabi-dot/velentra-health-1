@@ -1,0 +1,913 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,sans-serif;
+}
+
+body{
+  background:#ffffff;
+  color:#1b2a41;
+}
+
+/* Header */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:#ffffff;
+    border-bottom:2px solid #D4AF37;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 3px 12px rgba(0,0,0,.08);
+}
+
+header h1{
+  color:#0B2E59;
+  font-size:32px;
+  font-weight:700;
+  letter-spacing:1px;
+}
+
+.velentra{
+  color:#0B2E59;
+}
+
+.health{
+  color:#18A7A7;
+}
+nav a{
+    color:#0B2E59;
+    text-decoration:none;
+    margin-left:28px;
+    font-weight:600;
+    font-size:16px;
+    transition:0.3s ease;
+}
+
+ nav a:hover{
+    color:#18A7A7;
+ }
+/* Health teal */
+
+/* Hero */
+.hero{
+  text-align:center;
+  padding:10px 20px;
+  background:linear-gradient(135deg,#0B2E59,#18A7A7);
+  border-bottom:2px solid #D4AF37;
+box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+.hero h2{
+  font-size:38px;
+  color:#ffffff;
+  margin-bottom:20px;
+  font-weight:700;
+}
+
+.hero p{
+  font-size:18px;
+  margin-bottom:30px;
+  color:#d7e5f5;
+  line-height:1.6;
+}
+
+ 
+
+/* Sections */
+.about,.services{
+  padding:80px 20px;
+  text-align:center;
+}
+
+.about h2,
+.services h2{
+  color:#0B2E59;
+  font-size:36px;
+  margin-bottom:25px;
+  font-weight:700;
+}
+
+/* Cards */
+.card{
+  background:#ffffff;
+  border:2px solid #18A7A7;
+  padding:30px;
+  margin:20px auto;
+  max-width:350px;
+  border-radius:15px;
+  box-shadow:0 8px 20px rgba(0,0,0,.10);
+  transition:0.3s ease;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+/* Footer */
+footer{
+  text-align:center;
+  padding:20px;
+  border-top:2px solid #D4AF37;
+  margin-top:40px;
+  background:#0B2E59;
+  color:white;
+}
+.logo .health{
+  color:#18A7A7;
+}
+
+.logo .velentra{
+  color:#0B2E59;
+}
+/* Velentra Health Brand Colors */
+
+header h1{
+  color:#0B2E59 !important;
+}
+
+/* If logo has separate words */
+.velentra{
+  color:#0B2E59 !important;
+}
+
+.health{
+  color:#18A7A7 !important;
+}
+
+/* Header */
+header{
+  background:#ffffff;
+  border-bottom:2px solid #D4AF37;
+}
+
+/* Menu */
+nav a{
+  color:#0B2E59;
+}
+
+nav a:hover{
+  color:#18A7A7;
+}
+#why-choose {
+    padding: 80px 20px;
+    background: #f8f9fc;
+    text-align: center;
+}
+
+#why-choose h2 {
+    font-size: 36px;
+    color: #123B6D;
+    margin-bottom: 50px;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.feature-card {
+    background:#ffffff;
+    padding:35px 25px;
+    border-radius:15px;
+    border-top:4px solid #18A7A7;
+    box-shadow:0 8px 20px rgba(0,0,0,.10);
+    transition:0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card h3 {
+    color: #123B6D;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+#services {
+    padding: 80px 20px;
+    background: #ffffff;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 36px;
+    color: #123B6D;
+    margin-bottom: 40px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.service-card {
+    background:#123B6D;
+    color:#ffffff;
+    padding:30px 25px;
+    border-radius:15px;
+    font-size:18px;
+    font-weight:600;
+    border-bottom:4px solid #D4AF37;
+    box-shadow:0 8px 20px rgba(0,0,0,.10);
+    transition:0.3s ease;
+}
+
+.service-card:hover {
+    background:#18A7A7;
+    color:#ffffff;
+    transform:translateY(-8px);
+    box-shadow:0 12px 25px rgba(0,0,0,.15);
+}
+#process {
+    padding:90px 20px;
+    background:#f8f9fc;
+    text-align:center;
+    border-top:1px solid #e5e5e5;
+}
+
+#process h2 {
+    font-size:36px;
+    color:#123B6D;
+    margin-bottom:40px;
+    font-weight:700;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.process-card {
+    background:#ffffff;
+    padding:30px 25px;
+    border-radius:15px;
+    border-top:4px solid #18A7A7;
+    box-shadow:0 8px 20px rgba(0,0,0,.10);
+    transition:0.3s ease;
+}
+
+.process-card:hover{
+    transform:translateY(-5px);
+}
+
+.process-card h3 {
+    color: #D4AF37;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.process-card p {
+    color: #123B6D;
+    font-weight: bold;
+}
+#testimonials {
+    padding: 80px 20px;
+    background: #ffffff;
+    text-align: center;
+}
+
+#testimonials h2 {
+    font-size: 36px;
+    color: #123B6D;
+    margin-bottom: 40px;
+}
+
+.testimonial-card {
+    max-width:800px;
+    margin:auto;
+    background:#ffffff;
+    padding:35px;
+    border-left:5px solid #18A7A7;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.10);
+    transition:0.3s ease;
+}
+
+.testimonial-card:hover{
+    transform:translateY(-5px);
+}
+
+.testimonial-card p {
+    font-size: 18px;
+    font-style: italic;
+    color: #555;
+}
+
+.testimonial-card h4 {
+    margin-top: 20px;
+    color: #123B6D;
+}
+#cta {
+    padding: 80px 20px;
+    background: #123B6D;
+    color: #fff;
+    text-align: center;
+}
+
+#cta h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#cta p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto 30px;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 16px 42px;
+    background: #D4AF37;
+    color: #123B6D;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight:700;
+    font-size:16px;
+    transition:0.3s ease;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.cta-btn:hover {
+    background:#18A7A7;
+    color:#ffffff;
+    transform:translateY(-3px);
+}
+#footer {
+    background:#0B2E59;
+    color:#ffffff;
+    text-align:center;
+    padding:50px 20px;
+    border-top:2px solid #D4AF37;
+}
+
+#footer h3 {
+    color: #D4AF37;
+    margin-bottom: 15px;
+}
+
+#footer p {
+    margin: 8px 0;
+    font-size: 15px;
+}
+.mission {
+    padding: 80px 20px;
+    background: #f8f9fc;
+}
+
+.mission .container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.mission h2 {
+    color: #123B6D;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 32px;
+}
+
+.mission p {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.mission ul {
+    padding-left: 20px;
+}
+
+.mission li {
+    margin-bottom: 10px;
+    color: #333;
+}
+.hipaa {
+    padding: 80px 20px;
+    background: #ffffff;
+    text-align: center;
+}
+
+.hipaa h2 {
+    font-size: 32px;
+    color: #123B6D;
+    margin-bottom: 20px;
+}
+
+.hipaa p {
+    max-width: 850px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #555;
+    font-size: 17px;
+}
+.leadership {
+    padding: 80px 20px;
+    background: #ffffff;
+    text-align: center;
+}
+
+.leadership h2 {
+    color: #123B6D;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.leadership p {
+    max-width: 850px;
+    margin: auto;
+    color: #555;
+    line-height: 1.8;
+    font-size: 17px;
+}
+.hipaa {
+    padding: 80px 20px;
+    background: #f8f9fc;
+    text-align: center;
+}
+
+.hipaa h2 {
+    color: #123B6D;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.hipaa p {
+    max-width: 850px;
+    margin: auto;
+    line-height: 1.8;
+    color: #555;
+    font-size: 17px;
+}
+.client-first {
+    padding: 80px 20px;
+    background: #ffffff;
+    text-align: center;
+}
+
+.client-first h2 {
+    color: #123B6D;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.client-first p {
+    max-width: 850px;
+    margin: auto;
+    line-height: 1.8;
+    color: #555;
+    font-size: 17px;
+}
+.medical-billing {
+    padding: 80px 20px;
+    background: #f8f9fc;
+}
+
+.medical-billing .container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.medical-billing h2,
+.medical-billing h3 {
+    color: #123B6D;
+}
+
+.medical-billing p,
+.medical-billing li {
+    color: #555;
+    line-height: 1.8;
+}
+
+.medical-billing ul {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+.medical-coding {
+    padding: 80px 20px;
+    background: #ffffff;
+}
+
+.medical-coding .container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.medical-coding h2,
+.medical-coding h3 {
+    color: #123B6D;
+}
+
+.medical-coding p,
+.medical-coding li {
+    color: #555;
+    line-height: 1.8;
+}
+
+.medical-coding ul {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+.ar-recovery {
+    padding: 80px 20px;
+    background: #f8f9fc;
+}
+
+.ar-recovery .container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.ar-recovery h2,
+.ar-recovery h3 {
+    color: #123B6D;
+}
+
+.ar-recovery p,
+.ar-recovery li {
+    color: #555;
+    line-height: 1.8;
+}
+
+.ar-recovery ul {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+.denial-management {
+    padding: 80px 20px;
+    background: #ffffff;
+}
+
+.denial-management .container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.denial-management h2,
+.denial-management h3 {
+    color: #123B6D;
+}
+
+.denial-management p,
+.denial-management li {
+    color: #555;
+    line-height: 1.8;
+}
+
+.denial-management ul {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+.denial-management {
+    padding: 80px 20px;
+    background: #ffffff;
+}
+
+.denial-management .container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.denial-management h2,
+.denial-management h3 {
+    color: #123B6D;
+}
+
+.denial-management p,
+.denial-management li {
+    color: #555;
+    line-height: 1.8;
+}
+
+.denial-management ul {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+/* ==========================
+   SERVICES PAGE
+========================== */
+
+.page-hero{
+    background:#0f2d52;
+    color:#fff;
+    text-align:center;
+    padding:100px 20px;
+}
+
+.page-hero h1{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.page-hero p{
+    max-width:800px;
+    margin:auto;
+    font-size:18px;
+    line-height:1.8;
+    color:#d7e5f5;
+}
+
+.services-section{
+    padding:80px 20px;
+    background:#f8fafc;
+}
+
+.services-section .container{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.service-card{
+    background:#fff;
+    padding:35px;
+    border-radius:16px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.service-card:hover{
+    transform:translateY(-8px);
+}
+
+.service-card h2{
+    color:#0f2d52;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.service-card p{
+    color:#555;
+    line-height:1.8;
+}
+/* ==========================
+   HEALTHCARE PAGE
+========================== */
+
+.healthcare-section{
+    padding:80px 20px;
+    background:#ffffff;
+}
+
+.healthcare-section .container{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.health-card{
+    background:#f8fafc;
+    padding:35px;
+    border-radius:16px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.health-card:hover{
+    transform:translateY(-8px);
+}
+
+.health-card h2{
+    color:#0f2d52;
+    margin-bottom:15px;
+}
+
+.health-card p{
+    color:#555;
+    line-height:1.8;
+}
+/* ==========================
+   TECHNOLOGY PAGE
+========================== */
+
+.hero{
+    background:#0f2d52;
+    color:#fff;
+    text-align:center;
+    padding:100px 20px;
+}
+
+.hero h2{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:850px;
+    margin:auto;
+    line-height:1.8;
+    color:#d7e5f5;
+}
+
+.about{
+    padding:80px 20px;
+    background:#ffffff;
+}
+
+.about .container{
+    max-width:1100px;
+    margin:auto;
+}
+
+.about h2{
+    color:#0f2d52;
+    margin-bottom:30px;
+    text-align:center;
+}
+
+.about h3{
+    color:#0f2d52;
+    margin-top:30px;
+    margin-bottom:12px;
+}
+
+.about p{
+    color:#555;
+    line-height:1.9;
+    margin-bottom:20px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 768px){
+
+  header{
+    padding:20px;
+    flex-direction:column;
+  }
+
+  nav{
+    margin-top:15px;
+  }
+
+  nav a{
+    margin:0 8px;
+    font-size:14px;
+  }
+
+  .hero{
+    padding:80px 20px;
+  }
+
+  .hero h2{
+    font-size:32px;
+  }
+
+  .hero p{
+    font-size:16px;
+  }
+
+  #why-choose h2{
+    font-size:30px;
+  }
+
+  .features{
+    grid-template-columns:1fr;
+  }
+
+  .cta-btn{
+    padding:14px 30px;
+  }
+}
+nav {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+nav a {
+    margin:8px 10px;
+}
+/* Responsive Images */
+
+img{
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+/* Container */
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:0 20px;
+}
+.services-section .container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.service-card{
+    background:#ffffff;
+    padding:30px;
+    border-radius:15px;
+    border-top:4px solid #D4AF37;
+    box-shadow:0 8px 20px rgba(0,0,0,.10);
+}
+
+.service-card h2{
+    color:#123B6D;
+    font-size:22px;
+    margin-bottom:15px;
+}
+
+.service-card p{
+    line-height:1.6;
+}
+/* RCM Service Cards */
+
+.medical-billing,
+.medical-coding,
+.ar-recovery,
+.denial-management,
+.eligibility-verification,
+.prior-authorization,
+.credentialing,
+.healthcare-it{
+    padding:60px 20px;
+    background:#ffffff;
+}
+
+.medical-billing .container,
+.medical-coding .container,
+.ar-recovery .container,
+.denial-management .container,
+.eligibility-verification .container,
+.prior-authorization .container,
+.credentialing .container,
+.healthcare-it .container{
+    background:#ffffff;
+    padding:30px;
+    border-radius:15px;
+    border-top:4px solid #D4AF37;
+    box-shadow:0 8px 20px rgba(0,0,0,.10);
+}
+
+.medical-billing h2,
+.medical-coding h2,
+.ar-recovery h2,
+.denial-management h2,
+.eligibility-verification h2,
+.prior-authorization h2,
+.credentialing h2,
+.healthcare-it h2{
+    color:#123B6D;
+}
+.about h3{
+    color:#123B6D;
+    margin-top:30px;
+    font-size:22px;
+}
+
+.about p{
+    line-height:1.7;
+    margin-bottom:20px;
+}
+/* Contact Form */
+
+.contact-form{
+    padding:60px 20px;
+}
+
+.contact-form form{
+    max-width:600px;
+    margin:auto;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:14px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    font-size:16px;
+}
+
+.contact-form button{
+    background:#D4AF37;
+    color:#123B6D;
+    padding:14px 30px;
+    border:none;
+    border-radius:25px;
+    font-weight:700;
+    cursor:pointer;
+}
+
+.contact-form button:hover{
+    background:#18A7A7;
+    color:#ffffff;
+}
