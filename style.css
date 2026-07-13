@@ -977,3 +977,16 @@ section{
 .testimonial-card:hover{
     transform:translateY(-6px);
 }
+.feature-card,
+.service-card,
+.process-card,
+.testimonial-card{
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover,
+.service-card:hover,
+.process-card:hover,
+.testimonial-card:hover{
+    transform: translateY(-6px);
+}
