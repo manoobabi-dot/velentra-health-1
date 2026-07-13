@@ -939,3 +939,12 @@ img{
 .services-section .service-card p{
     color:#ffffff;
 }
+.service-card {
+    background:red !important;
+    color:white !important;
+}
+
+.service-card h2,
+.service-card p {
+    color:white !important;
+}
