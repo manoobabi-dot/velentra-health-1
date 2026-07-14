@@ -1019,18 +1019,21 @@ section{
 }
 
 .banner-btn{
-    position: absolute;
-    left: 8%;
-    bottom: 60px;
-    background: #D4AF37;
-    color: #fff;
-    text-decoration: none;
-    padding: 14px 30px;
-    border-radius: 6px;
-    font-weight: 600;
-    transition: 0.3s;
+    position:absolute;
+    left:8%;
+    top:68%;
+    transform:translateY(-50%);
+    background:#D4AF37;
+    color:#123B6D;
+    text-decoration:none;
+    padding:14px 32px;
+    border-radius:30px;
+    font-weight:700;
+    transition:0.3s ease;
+    box-shadow:0 5px 15px rgba(0,0,0,.25);
 }
 
 .banner-btn:hover{
-    background: #123B6D;
+    background:#18A7A7;
+    color:#fff;
 }
