@@ -1168,3 +1168,16 @@ section{
 .careers-section .service-card:hover p{
     color:#ffffff;
 }
+/* Resources Page */
+
+.resources-section{
+    padding:80px 20px;
+    background:#f7f9fc;
+}
+
+.resources-section h2{
+    text-align:center;
+    color:#123B6D;
+    font-size:36px;
+    margin-bottom:50px;
+}
