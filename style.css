@@ -923,7 +923,6 @@ img{
     color:#ffffff;
 }
 .service-card {
-.service-card {
     background: #18A7A7 !important;
     color: #ffffff !important;
 }
@@ -1039,4 +1038,20 @@ section{
     color: #123B6D;
     font-size: 36px;
     font-weight: 700;
+}
+.rcm-services{
+    background:#f7f9fc;
+    padding:80px 20px;
+}
+
+.rcm-services .container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.rcm-services h2{
+    text-align:center;
+    color:#123B6D;
+    font-size:36px;
+    margin-bottom:40px;
 }
