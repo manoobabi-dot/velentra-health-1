@@ -923,13 +923,15 @@ img{
     color:#ffffff;
 }
 .service-card {
-    background:#f7f9fc !important;
-    color:#123B6D !important;
+.service-card {
+    background: #18A7A7 !important;
+    color: #ffffff !important;
 }
 
 .service-card h2,
+.service-card h3,
 .service-card p {
-    color:#ffffff !important;
+    color: #ffffff !important;
 }
 /* Homepage Services Cards */
 #services .service-card {
