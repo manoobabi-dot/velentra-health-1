@@ -1020,14 +1020,14 @@ section{
 
 .banner-btn{
     position:absolute;
-    left:8%;
-    top:68%;
-    transform:translateY(-50%);
+    left:5%;
+    bottom:10%;
     background:#D4AF37;
     color:#123B6D;
     text-decoration:none;
-    padding:14px 32px;
+    padding:10px 22px;
     border-radius:30px;
+    font-size:15px;
     font-weight:700;
     transition:0.3s ease;
     box-shadow:0 5px 15px rgba(0,0,0,.25);
