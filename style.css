@@ -1029,3 +1029,14 @@ section{
     background: #f7f9fc;
     padding: 60px 0;
 }
+.rcm-services{
+    padding: 80px 0;
+}
+
+.rcm-services h2{
+    text-align: center;
+    margin-bottom: 50px;
+    color: #123B6D;
+    font-size: 36px;
+    font-weight: 700;
+}
