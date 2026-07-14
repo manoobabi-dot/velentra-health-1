@@ -1033,3 +1033,23 @@ section{
     line-height: 1.7;
     margin-bottom: 30px;
 }
+.page-banner{
+    position: relative;
+}
+
+.banner-btn{
+    position: absolute;
+    left: 8%;
+    bottom: 60px;
+    background: #D4AF37;
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 30px;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.banner-btn:hover{
+    background: #123B6D;
+}
