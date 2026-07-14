@@ -1124,3 +1124,46 @@ section{
     margin-bottom:30px;
   }
 }
+/* Careers Page */
+
+.careers-section{
+    padding:80px 20px;
+    background:#f7f9fc;
+}
+
+.careers-section h2{
+    text-align:center;
+    color:#123B6D;
+    font-size:36px;
+    margin-bottom:50px;
+}
+
+.careers-section .services-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.careers-section .service-card{
+    background:#ffffff;
+    border-top:4px solid #18A7A7;
+    border-radius:15px;
+    padding:30px;
+    box-shadow:0 8px 20px rgba(0,0,0,.10);
+    transition:.3s;
+}
+
+.careers-section .service-card:hover{
+    background:#18A7A7;
+    transform:translateY(-6px);
+}
+
+.careers-section .service-card h3,
+.careers-section .service-card p{
+    color:#123B6D;
+}
+
+.careers-section .service-card:hover h3,
+.careers-section .service-card:hover p{
+    color:#ffffff;
+}
