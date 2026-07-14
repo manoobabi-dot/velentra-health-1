@@ -1077,3 +1077,30 @@ section{
 .rcm-services .service-card:hover p{
     color:#ffffff !important;
 }
+/* Universal Service Cards */
+.service-card{
+    background:#ffffff !important;
+    color:#123B6D !important;
+    border-top:4px solid #18A7A7;
+    border-radius:15px;
+    padding:30px;
+    box-shadow:0 8px 20px rgba(0,0,0,.10);
+    transition:all .3s ease;
+}
+
+.service-card h2,
+.service-card h3,
+.service-card p{
+    color:#123B6D !important;
+}
+
+.service-card:hover{
+    background:#18A7A7 !important;
+    transform:translateY(-6px);
+}
+
+.service-card:hover h2,
+.service-card:hover h3,
+.service-card:hover p{
+    color:#ffffff !important;
+}
