@@ -1104,3 +1104,23 @@ section{
 .service-card:hover p{
     color:#ffffff !important;
 }
+.technology-services{
+    padding:80px 20px;
+    background:#f7f9fc;
+}
+
+.technology-services .container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.technology-services h2{
+    text-align:center;
+    color:#123B6D;
+    font-size:36px;
+    font-weight:700;
+    margin-bottom:50px;
+  .technology-banner{
+    margin-bottom:30px;
+  }
+}
