@@ -1055,3 +1055,25 @@ section{
     font-size:36px;
     margin-bottom:40px;
 }
+/* RCM Page Cards */
+.rcm-services .service-card{
+    background:#ffffff !important;
+    color:#123B6D !important;
+    border-top:4px solid #18A7A7;
+}
+
+.rcm-services .service-card h2,
+.rcm-services .service-card h3,
+.rcm-services .service-card p{
+    color:#123B6D !important;
+}
+
+.rcm-services .service-card:hover{
+    background:#18A7A7 !important;
+}
+
+.rcm-services .service-card:hover h2,
+.rcm-services .service-card:hover h3,
+.rcm-services .service-card:hover p{
+    color:#ffffff !important;
+}
