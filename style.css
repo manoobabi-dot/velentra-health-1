@@ -1258,3 +1258,58 @@ section{
 .menu-toggle.active span:nth-child(3){
     transform: translateY(-9px) rotate(-45deg);
 }
+/* ===== Universal Cards Design ===== */
+
+.feature-card,
+.service-card,
+.process-card,
+.testimonial-card{
+    background:#ffffff !important;
+    color:#123B6D !important;
+    border-top:4px solid #123B6D !important;
+    border-bottom:4px solid #D4AF37 !important;
+    border-radius:15px;
+    padding:30px;
+    box-shadow:0 8px 20px rgba(0,0,0,.10);
+    transition:all .3s ease;
+}
+
+.feature-card h2,
+.feature-card h3,
+.feature-card p,
+.service-card h2,
+.service-card h3,
+.service-card p,
+.process-card h2,
+.process-card h3,
+.process-card p,
+.testimonial-card h2,
+.testimonial-card h3,
+.testimonial-card h4,
+.testimonial-card p{
+    color:#123B6D !important;
+}
+
+.feature-card:hover,
+.service-card:hover,
+.process-card:hover,
+.testimonial-card:hover{
+    background:#18A7A7 !important;
+    transform:translateY(-8px);
+}
+
+.feature-card:hover h2,
+.feature-card:hover h3,
+.feature-card:hover p,
+.service-card:hover h2,
+.service-card:hover h3,
+.service-card:hover p,
+.process-card:hover h2,
+.process-card:hover h3,
+.process-card:hover p,
+.testimonial-card:hover h2,
+.testimonial-card:hover h3,
+.testimonial-card:hover h4,
+.testimonial-card:hover p{
+    color:#ffffff !important;
+}
