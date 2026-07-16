@@ -153,6 +153,12 @@ const navbar = document.getElementById("navbar");
 
 menuToggle.addEventListener("click", () => {
     navbar.classList.toggle("active");
+
+    if (navbar.classList.contains("active")) {
+        menuToggle.innerHTML = "&times;";
+    } else {
+        menuToggle.innerHTML = "&#9776;";
+    }
 });
 </script>
 </body>
