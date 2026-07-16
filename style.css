@@ -1191,11 +1191,19 @@ section{
     color: #123B6D;
     cursor: pointer;
 }
-
 @media (max-width: 768px){
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
 
     .menu-toggle{
         display: block;
+        margin-left: auto;
+        font-size: 30px;
     }
 
     nav{
@@ -1209,13 +1217,8 @@ section{
         display: flex;
     }
 
-    header{
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-    }
-
     nav a{
+        display: block;
         padding: 12px 0;
     }
 }
