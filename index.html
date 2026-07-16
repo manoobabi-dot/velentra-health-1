@@ -155,9 +155,9 @@ menuToggle.addEventListener("click", () => {
     navbar.classList.toggle("active");
 
     if (navbar.classList.contains("active")) {
-        menuToggle.innerHTML = "&times;";
+        menuToggle.textContent = "✕";
     } else {
-        menuToggle.innerHTML = "&#9776;";
+        menuToggle.textContent = "☰";
     }
 });
 </script>
