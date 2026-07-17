@@ -1794,3 +1794,24 @@ header.main-header nav#navbar a{
     height:3px;
     background:#123B6D;
 }
+/* Hide menu by default */
+#navbar{
+    display:none !important;
+}
+
+/* Show only after clicking hamburger */
+#navbar.active{
+    display:flex !important;
+    flex-direction:column;
+    position:absolute;
+    top:70px;
+    right:10px;
+    width:240px;
+    background:#fff;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    z-index:999;
+}
+
+.menu-toggle{
+    display:flex !important;
+}
