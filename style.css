@@ -1659,3 +1659,37 @@ header.main-header nav#navbar{
 header.main-header nav#navbar a{
     font-size:13px !important;
 }
+/* Desktop Menu Fix */
+
+#navbar{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.menu-toggle{
+    display:none;
+}
+
+
+/* Mobile Menu */
+
+@media(max-width:768px){
+
+    .menu-toggle{
+        display:flex;
+        flex-direction:column;
+        gap:5px;
+    }
+
+    #navbar{
+        display:none;
+        flex-direction:column;
+        text-align:center;
+    }
+
+    #navbar.active{
+        display:flex;
+    }
+
+}
