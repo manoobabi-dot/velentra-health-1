@@ -1690,14 +1690,7 @@ header.main-header nav#navbar a{
     }
 
 }
-/* ===== FINAL NAVBAR FIX ===== */
 
-#navbar{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:18px;
-}
 
 .menu-toggle{
     display:none;
