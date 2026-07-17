@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://manoobabi-dot.github.io/velentra-health-1/sitemap.xml
+Sitemap: https://velentrahealthcare.com/sitemap.xml
