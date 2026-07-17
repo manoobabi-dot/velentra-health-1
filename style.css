@@ -1313,3 +1313,38 @@ section{
 .testimonial-card:hover p{
     color:#ffffff !important;
 }
+/* CTA Section */
+
+#cta{
+    background:#0B2E59;
+    padding:70px 20px;
+    text-align:center;
+    color:white;
+}
+
+#cta h2{
+    font-size:36px;
+    margin-bottom:20px;
+}
+
+#cta p{
+    max-width:800px;
+    margin:0 auto 30px;
+    font-size:18px;
+    line-height:1.7;
+}
+
+.cta-btn{
+    display:inline-block;
+    background:#18A7A7;
+    color:white;
+    padding:14px 30px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s ease;
+}
+
+.cta-btn:hover{
+    transform:translateY(-3px);
+}
