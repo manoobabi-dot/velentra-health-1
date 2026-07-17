@@ -1371,3 +1371,48 @@ section{
 }
 
 }
+.testimonial-slider{
+    position:relative;
+}
+
+.prev-btn,
+.next-btn{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    background:#0B2E59;
+    color:white;
+    border:none;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    cursor:pointer;
+    font-size:20px;
+    z-index:2;
+}
+
+.prev-btn{
+    left:-20px;
+}
+
+.next-btn{
+    right:-20px;
+}
+
+.prev-btn:hover,
+.next-btn:hover{
+    opacity:0.8;
+}
+
+
+@media(max-width:768px){
+
+.prev-btn{
+    left:5px;
+}
+
+.next-btn{
+    right:5px;
+}
+
+}
