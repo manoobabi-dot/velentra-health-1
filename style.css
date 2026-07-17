@@ -1313,3 +1313,37 @@ section{
 .testimonial-card:hover p{
     color:#ffffff !important;
 }
+/* Testimonial Slider */
+
+.testimonial-slider{
+    display:flex;
+    overflow-x:auto;
+    gap:20px;
+    scroll-snap-type:x mandatory;
+    scroll-behavior:smooth;
+    padding:10px 0;
+}
+
+.testimonial-slider::-webkit-scrollbar{
+    display:none;
+}
+
+.testimonial-card{
+    min-width:100%;
+    scroll-snap-align:start;
+    background:#fff;
+    border-radius:12px;
+    padding:30px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    text-align:center;
+}
+
+.testimonial-card p{
+    font-size:18px;
+    line-height:1.7;
+}
+
+.testimonial-card h4{
+    margin-top:20px;
+    color:#0B2E59;
+}
