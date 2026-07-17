@@ -1733,3 +1733,59 @@ header.main-header nav#navbar a{
     }
 
 }
+/* ===== Full Hamburger Menu Header ===== */
+
+.main-header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:10px 5%;
+    background:#ffffff;
+}
+
+.header-logo img{
+    width:90px;
+}
+
+
+/* Hide navigation by default */
+#navbar{
+    display:none;
+    position:absolute;
+    top:70px;
+    left:0;
+    width:100%;
+    background:#ffffff;
+    flex-direction:column;
+    text-align:center;
+    padding:20px 0;
+    z-index:1000;
+}
+
+#navbar.active{
+    display:flex;
+}
+
+#navbar a{
+    padding:12px;
+    color:#0B2E59;
+    text-decoration:none;
+}
+
+
+/* Always show hamburger */
+.menu-toggle{
+    display:flex !important;
+    flex-direction:column;
+    gap:5px;
+    background:none;
+    border:none;
+    cursor:pointer;
+}
+
+.menu-toggle span{
+    width:28px;
+    height:3px;
+    background:#123B6D;
+    border-radius:3px;
+}
