@@ -1626,3 +1626,36 @@ nav#navbar a{
     position:relative !important;
     top:auto !important;
 }
+/* FINAL HEADER OVERRIDE */
+
+header.main-header{
+    padding:8px 5% !important;
+    position:relative !important;
+}
+
+header.main-header .header-top{
+    min-height:70px !important;
+}
+
+header.main-header .header-logo img{
+    width:90px !important;
+    max-height:60px !important;
+}
+
+header.main-header .header-contact{
+    font-size:12px !important;
+}
+
+header.main-header .header-btn{
+    padding:7px 15px !important;
+    font-size:13px !important;
+}
+
+header.main-header nav#navbar{
+    margin-top:5px !important;
+    gap:15px !important;
+}
+
+header.main-header nav#navbar a{
+    font-size:13px !important;
+}
