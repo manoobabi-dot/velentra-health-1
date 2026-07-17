@@ -1,0 +1,1203 @@
+/* =====================================
+   VELENTRA HEALTH - CLEAN CSS
+   PART 1: BASE + HEADER + HERO
+===================================== */
+
+
+/* ===== RESET ===== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Arial', sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#ffffff;
+    color:#333;
+    line-height:1.6;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+}
+
+
+/* ===== COLORS ===== */
+
+:root{
+    --navy:#0B2E59;
+    --blue:#123B6D;
+    --teal:#18A7A7;
+    --gold:#D4AF37;
+    --light:#f7f9fc;
+    --text:#555;
+}
+
+
+/* ===== CONTAINER ===== */
+
+.container{
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+    padding:0 20px;
+}
+
+
+/* ===== HEADER ===== */
+
+header{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:15px 60px;
+
+    background:#ffffff;
+
+    border-bottom:2px solid var(--gold);
+
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+
+}
+
+
+/* ===== LOGO ===== */
+
+.logo{
+
+    height:90px;
+    width:auto;
+
+}
+
+
+.logo-text{
+    font-size:30px;
+    font-weight:700;
+}
+
+
+.velentra{
+    color:var(--navy);
+}
+
+
+.health{
+    color:var(--teal);
+}
+
+
+
+/* ===== NAVIGATION ===== */
+
+
+nav{
+
+    display:flex;
+    align-items:center;
+    gap:25px;
+
+}
+
+
+nav a{
+
+    color:var(--navy);
+
+    font-size:16px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+
+nav a:hover{
+
+    color:var(--teal);
+
+}
+
+
+
+/* ===== HAMBURGER ===== */
+
+.menu-toggle{
+
+    display:none;
+
+    font-size:30px;
+
+    color:var(--navy);
+
+    cursor:pointer;
+
+}
+
+
+
+/* ===== HERO ===== */
+
+
+.hero{
+
+    width:100%;
+
+    overflow:hidden;
+
+}
+
+
+.hero-image{
+
+    width:100%;
+
+    height:auto;
+
+    object-fit:cover;
+
+}
+
+
+
+.hero-content{
+
+    max-width:800px;
+
+    margin:auto;
+
+    text-align:center;
+
+    padding:50px 20px;
+
+}
+
+
+.hero h1{
+
+    color:var(--navy);
+
+    font-size:48px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.hero p{
+
+    color:var(--text);
+
+    font-size:18px;
+
+}
+
+
+
+/* ===== BUTTON ===== */
+
+
+.btn{
+
+    display:inline-block;
+
+    margin-top:25px;
+
+    padding:14px 35px;
+
+    background:var(--gold);
+
+    color:var(--navy);
+
+    border-radius:30px;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+
+.btn:hover{
+
+    background:var(--teal);
+
+    color:white;
+
+}
+
+
+
+/* ===== SECTIONS ===== */
+
+
+section{
+
+    padding:70px 20px;
+
+}
+
+
+.section-title{
+
+    text-align:center;
+
+    color:var(--navy);
+
+    font-size:36px;
+
+    margin-bottom:40px;
+
+}
+
+
+
+/* ===== FOOTER ===== */
+
+
+footer{
+
+    background:var(--navy);
+
+    color:white;
+
+    text-align:center;
+
+    padding:40px 20px;
+
+    border-top:2px solid var(--gold);
+
+}
+
+
+
+/* ===== MOBILE BASIC ===== */
+
+
+@media(max-width:768px){
+
+
+header{
+
+    padding:15px 20px;
+
+}
+
+
+.logo{
+
+    height:70px;
+
+}
+
+
+.menu-toggle{
+
+    display:block;
+
+}
+
+
+nav{
+
+    display:none;
+
+    position:absolute;
+
+    top:100%;
+
+    left:0;
+
+    width:100%;
+
+    background:white;
+
+    flex-direction:column;
+
+    padding:20px;
+
+}
+
+
+nav.active{
+
+    display:flex;
+
+}
+
+
+nav a{
+
+    padding:10px;
+
+}
+
+
+
+.hero h1{
+
+    font-size:32px;
+
+}
+
+
+.hero p{
+
+    font-size:16px;
+
+}
+
+
+.section-title{
+
+    font-size:28px;
+
+}
+
+
+  }
+/* =====================================
+   PART 2: HOMEPAGE SECTIONS
+===================================== */
+
+
+/* ===== SERVICES SECTION ===== */
+
+.services-section{
+
+    background:var(--light);
+
+}
+
+
+.services-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+
+
+.service-card{
+
+    background:white;
+
+    padding:35px 25px;
+
+    border-radius:16px;
+
+    text-align:center;
+
+    border-top:4px solid var(--teal);
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s ease;
+
+}
+
+
+
+.service-card h2,
+.service-card h3{
+
+    color:var(--navy);
+
+    margin-bottom:15px;
+
+}
+
+
+
+.service-card p{
+
+    color:var(--text);
+
+}
+
+
+
+.service-card:hover{
+
+    transform:translateY(-8px);
+
+    background:var(--teal);
+
+}
+
+
+
+.service-card:hover h2,
+.service-card:hover h3,
+.service-card:hover p{
+
+    color:white;
+
+}
+
+
+
+/* ===== WHY CHOOSE US ===== */
+
+
+#why-choose{
+
+    background:white;
+
+    text-align:center;
+
+}
+
+
+
+.features{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+
+
+.feature-card{
+
+    background:var(--light);
+
+    padding:35px 25px;
+
+    border-radius:16px;
+
+    border-left:4px solid var(--gold);
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+
+
+.feature-card h3{
+
+    color:var(--navy);
+
+    margin-bottom:15px;
+
+}
+
+
+
+.feature-card p{
+
+    color:var(--text);
+
+}
+
+
+
+.feature-card:hover{
+
+    transform:translateY(-8px);
+
+    background:var(--navy);
+
+}
+
+
+
+.feature-card:hover h3,
+.feature-card:hover p{
+
+    color:white;
+
+}
+
+
+
+/* ===== PROCESS SECTION ===== */
+
+
+#process{
+
+    background:var(--light);
+
+    text-align:center;
+
+}
+
+
+
+.process-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(200px,1fr));
+
+    gap:25px;
+
+}
+
+
+
+.process-card{
+
+    background:white;
+
+    padding:30px 20px;
+
+    border-radius:15px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    border-top:4px solid var(--teal);
+
+    transition:.3s;
+
+}
+
+
+
+.process-card h3{
+
+    font
+  /* =====================================
+   PART 3: INNER PAGES CSS
+===================================== */
+
+
+/* ===== PAGE HERO / BANNER ===== */
+
+.page-hero{
+
+    background:var(--navy);
+
+    color:white;
+
+    text-align:center;
+
+    padding:80px 20px;
+
+}
+
+
+.page-hero h1{
+
+    font-size:42px;
+
+    margin-bottom:15px;
+
+}
+
+
+.page-hero p{
+
+    max-width:800px;
+
+    margin:auto;
+
+    color:#d7e5f5;
+
+    font-size:18px;
+
+}
+
+
+
+/* ===== ABOUT PAGE ===== */
+
+
+.about{
+
+    background:white;
+
+}
+
+
+.about .container{
+
+    max-width:1100px;
+
+}
+
+
+.about h2,
+.about h3{
+
+    color:var(--navy);
+
+    margin-bottom:20px;
+
+}
+
+
+.about p{
+
+    color:var(--text);
+
+    line-height:1.8;
+
+    margin-bottom:20px;
+
+}
+
+
+
+/* ===== MISSION SECTION ===== */
+
+
+.mission{
+
+    background:var(--light);
+
+}
+
+
+.mission h2{
+
+    color:var(--navy);
+
+}
+
+
+.mission ul{
+
+    padding-left:25px;
+
+}
+
+
+.mission li{
+
+    margin-bottom:10px;
+
+    color:var(--text);
+
+}
+
+
+
+/* ===== SERVICES PAGE ===== */
+
+
+.services-page{
+
+    background:var(--light);
+
+}
+
+
+.services-page .services-grid{
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+
+
+/* ===== HEALTHCARE IT ===== */
+
+
+.healthcare-section{
+
+    background:white;
+
+}
+
+
+.healthcare-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+
+
+.health-card{
+
+    background:var(--light);
+
+    padding:35px;
+
+    border-radius:16px;
+
+    border-top:4px solid var(--teal);
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+
+
+.health-card h2{
+
+    color:var(--navy);
+
+    margin-bottom:15px;
+
+}
+
+
+.health-card p{
+
+    color:var(--text);
+
+}
+
+
+
+/* ===== SPECIALITIES PAGE ===== */
+
+
+.specialities-section{
+
+    background:var(--light);
+
+}
+
+
+
+.speciality-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    border-bottom:4px solid var(--gold);
+
+    transition:.3s;
+
+}
+
+
+
+.speciality-card h3{
+
+    color:var(--navy);
+
+}
+
+
+
+.speciality-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+/* ===== RCM PAGE ===== */
+
+
+.rcm-services{
+
+    background:var(--light);
+
+}
+
+
+
+.rcm-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+
+
+.rcm-card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:16px;
+
+    border-top:4px solid var(--teal);
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+
+
+.rcm-card h2,
+.rcm-card h3{
+
+    color:var(--navy);
+
+}
+
+
+
+.rcm-card p,
+.rcm-card li{
+
+    color:var(--text);
+
+}
+
+
+
+/* ===== TECHNOLOGY PAGE ===== */
+
+
+.technology-services{
+
+    background:var(--light);
+
+}
+
+
+
+.technology-card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:16px;
+
+    box-shadow:0 
+  /* =====================================
+   PART 4: FINAL RESPONSIVE + POLISH
+===================================== */
+
+
+/* ===== HAMBURGER MENU ===== */
+
+.menu-toggle{
+
+    display:none;
+
+    flex-direction:column;
+
+    gap:6px;
+
+    cursor:pointer;
+
+}
+
+
+.menu-toggle span{
+
+    width:28px;
+
+    height:3px;
+
+    background:var(--navy);
+
+    border-radius:5px;
+
+    transition:.3s;
+
+}
+
+
+/* ===== MOBILE RESPONSIVE ===== */
+
+
+@media(max-width:768px){
+
+
+/* Header */
+
+header{
+
+    padding:12px 20px;
+
+}
+
+
+.logo{
+
+    height:65px;
+
+}
+
+
+.menu-toggle{
+
+    display:flex;
+
+}
+
+
+
+nav{
+
+    position:absolute;
+
+    top:100%;
+
+    left:0;
+
+    width:100%;
+
+    background:white;
+
+    display:none;
+
+    flex-direction:column;
+
+    padding:20px 0;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+
+}
+
+
+
+nav.active{
+
+    display:flex;
+
+}
+
+
+
+nav a{
+
+    text-align:center;
+
+    padding:12px;
+
+    font-size:16px;
+
+}
+
+
+
+/* Hero */
+
+.hero h1{
+
+    font-size:32px;
+
+}
+
+
+.hero-content{
+
+    padding:35px 15px;
+
+}
+
+
+.hero p{
+
+    font-size:16px;
+
+}
+
+
+
+/* Sections */
+
+section{
+
+    padding:45px 15px;
+
+}
+
+
+
+.section-title{
+
+    font-size:28px;
+
+}
+
+
+
+/* Cards */
+
+.service-card,
+.feature-card,
+.process-card,
+.testimonial-card,
+.health-card,
+.rcm-card,
+.speciality-card,
+.technology-card,
+.job-card,
+.resource-card{
+
+    padding:25px 20px;
+
+}
+
+
+
+/* Grids */
+
+.services-grid,
+.features,
+.process-grid,
+.healthcare-grid,
+.rcm-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+/* Page Hero */
+
+.page-hero{
+
+    padding:60px 20px;
+
+}
+
+
+
+.page-hero h1{
+
+    font-size:32px;
+
+}
+
+
+/* CTA */
+
+#cta h2{
+
+    font-size:28px;
+
+}
+
+
+
+.cta-btn{
+
+    padding:13px 30px;
+
+}
+
+
+
+/* Contact */
+
+.contact-box{
+
+    padding:25px 20px;
+
+}
+
+
+}
+
+
+
+/* ===== SMALL MOBILE ===== */
+
+
+@media(max-width:480px){
+
+
+.logo{
+
+    height:55px;
+
+}
+
+
+.hero h1{
+
+    font-size:26px;
+
+}
+
+
+.page-hero h1{
+
+    font-size:26px;
+
+}
+
+
+.section-title{
+
+    font-size:24px;
+
+}
+
+
+.service-card h2,
+.service-card h3{
+
+    font-size:20px;
+
+}
+
+
+}
+
+
+/* ===== IMAGE FIX ===== */
+
+
+img{
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+
+.hero-image,
+.page-banner img{
+
+    width:100%
