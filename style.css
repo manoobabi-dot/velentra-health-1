@@ -1605,18 +1605,7 @@ p{
     font-size:14px;
 }
 
-nav#navbar{
-    display:flex;
-    justify-content:center;
-    gap:18px;
-    margin-top:8px;
-}
 
-nav#navbar a{
-    font-size:14px;
-    color:#0B2E59;
-    text-decoration:none;
-}
 
 /* Remove sticky/fixed header */
 .main-header{
@@ -1658,43 +1647,13 @@ header.main-header nav#navbar a{
 }
 /* Desktop Menu Fix */
 
-#navbar{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-}
 
-.menu-toggle{
-    display:none;
-}
 
 
 /* Mobile Menu */
 
 @media(max-width:768px){
 
-    .menu-toggle{
-        display:flex;
-        flex-direction:column;
-        gap:5px;
-    }
-
-    #navbar{
-        display:none;
-        flex-direction:column;
-        text-align:center;
-    }
-
-    #navbar.active{
-        display:flex;
-    }
-
-}
-
-
-.menu-toggle{
-    display:none;
-}
 
 
 /* Mobile Menu */
