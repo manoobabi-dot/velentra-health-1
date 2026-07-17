@@ -1348,3 +1348,26 @@ section{
 .cta-btn:hover{
     transform:translateY(-3px);
 }
+.testimonial-slider{
+    overflow:hidden;
+}
+
+.testimonial-track{
+    display:flex;
+    gap:20px;
+    transition:0.5s ease;
+}
+
+.testimonial-card{
+    min-width:300px;
+    flex:0 0 calc(33.333% - 20px);
+}
+
+
+@media(max-width:768px){
+
+.testimonial-card{
+    flex:0 0 100%;
+}
+
+}
