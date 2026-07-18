@@ -2325,3 +2325,32 @@ header .header-logo img{
 }
 
 }
+/* ===== FINAL LOGO SIZE ===== */
+
+.header-logo img{
+    width:260px !important;
+    max-width:none !important;
+    height:auto !important;
+}
+
+.header-logo{
+    display:flex;
+    align-items:center;
+}
+
+.header-top{
+    min-height:120px !important;
+}
+
+
+@media(max-width:768px){
+
+.header-logo img{
+    width:200px !important;
+}
+
+.header-top{
+    min-height:95px !important;
+}
+
+}
