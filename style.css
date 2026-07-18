@@ -1818,3 +1818,88 @@ small {
 nav * {
     font-family: "Inter", sans-serif !important;
 }
+/* ===================================
+   HERO SECTION FINAL OVERRIDE
+   Paste at END of style.css
+=================================== */
+
+/* Header */
+header{
+    background:#fff;
+    padding:15px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    border-bottom:3px solid #D4AF37;
+}
+
+.logo img{
+    width:170px;
+    height:auto;
+    display:block;
+    margin:0 auto;
+}
+
+/* Hero */
+.page-hero,
+.hero-section,
+.hero{
+    background:#123F73;
+    color:#fff;
+    text-align:center;
+    padding:70px 20px 60px;
+}
+
+/* Hero Heading */
+.page-hero h1,
+.hero h1,
+.hero-section h1{
+    font-size:42px !important;
+    font-weight:700;
+    color:#fff !important;
+    line-height:1.2;
+    margin:20px auto 25px;
+    max-width:800px;
+}
+
+/* Hero Paragraph */
+.page-hero p,
+.hero p,
+.hero-section p{
+    font-size:20px;
+    line-height:1.8;
+    color:rgba(255,255,255,.92);
+    max-width:850px;
+    margin:0 auto;
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+.page-hero,
+.hero,
+.hero-section{
+    padding:55px 18px 45px;
+}
+
+.page-hero h1,
+.hero h1,
+.hero-section h1{
+    font-size:32px !important;
+    line-height:1.25;
+    margin-top:15px;
+    margin-bottom:18px;
+}
+
+.page-hero p,
+.hero p,
+.hero-section p{
+    font-size:17px;
+    line-height:1.7;
+}
+
+.logo img{
+    width:145px;
+}
+
+}
