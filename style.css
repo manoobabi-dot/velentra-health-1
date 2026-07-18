@@ -2050,3 +2050,35 @@ header{
     top:50%;
     transform:translateY(-50%);
 }
+/* ===== FINAL HEADER ALIGNMENT ===== */
+
+.main-header{
+    position:relative;
+}
+
+.header-top{
+    position:relative;
+    height:90px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.header-logo{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+}
+
+.header-logo img{
+    width:200px !important;
+    height:auto;
+}
+
+.menu-toggle{
+    position:absolute;
+    right:20px;
+    top:50%;
+    transform:translateY(-50%);
+}
