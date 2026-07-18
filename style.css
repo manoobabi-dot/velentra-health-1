@@ -1767,3 +1767,54 @@ header.main-header nav#navbar a{
 .menu-toggle{
     display:flex !important;
 }
+/* ===============================
+   GLOBAL FONT OVERRIDE
+   Paste at the END of style.css
+================================= */
+
+html,
+body,
+body * {
+    font-family: "Inter", sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Inter", sans-serif !important;
+    font-weight: 700 !important;
+    color: #0B2E59;
+    line-height: 1.3;
+}
+
+p,
+span,
+li,
+a,
+label,
+input,
+textarea,
+button,
+small {
+    font-family: "Inter", sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 1.7 !important;
+}
+
+.service-card *,
+.feature-card *,
+.process-card *,
+.testimonial-card *,
+.contact-card *,
+.info-card *,
+.resource-card *,
+.team-card *,
+.hero-content *,
+.footer *,
+nav * {
+    font-family: "Inter", sans-serif !important;
+}
