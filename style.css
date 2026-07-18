@@ -12,16 +12,13 @@ body{
 
 /* Header */
 header{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 60px;
-    background:#ffffff;
-    border-bottom:2px solid #D4AF37;
     position:sticky;
     top:0;
     z-index:1000;
+    background:#ffffff;
+    border-bottom:2px solid #D4AF37;
     box-shadow:0 3px 12px rgba(0,0,0,.08);
+    padding:0;
 }
 
 header h1{
