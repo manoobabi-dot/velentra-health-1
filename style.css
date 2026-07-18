@@ -1604,39 +1604,7 @@ p{
     position:relative !important;
     top:auto !important;
 }
-/* FINAL HEADER OVERRIDE */
 
-header.main-header{
-    padding:8px 5% !important;
-    position:relative !important;
-}
-
-header.main-header .header-top{
-    min-height:70px !important;
-}
-
-header.main-header .header-logo img{
-    width:90px !important;
-    max-height:60px !important;
-}
-
-header.main-header .header-contact{
-    font-size:12px !important;
-}
-
-header.main-header .header-btn{
-    padding:7px 15px !important;
-    font-size:13px !important;
-}
-
-header.main-header nav#navbar{
-    margin-top:5px !important;
-    gap:15px !important;
-}
-
-header.main-header nav#navbar a{
-    font-size:13px !important;
-}
 /* Desktop Menu Fix */
 
 
@@ -1678,49 +1646,7 @@ header.main-header nav#navbar a{
 
 }
 
-/* ===== Final Header Layout ===== */
 
-.main-header{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:10px 5%;
-    background:#fff;
-    position:relative;
-}
-
-.header-top{
-    display:flex;
-    align-items:center;
-}
-
-.header-logo img{
-    width:90px;
-}
-
-
-/* Hide pages initially */
-#navbar{
-    display:none;
-    position:absolute;
-    top:70px;
-    right:5%;
-    background:#fff;
-    flex-direction:column;
-    width:220px;
-    padding:20px;
-    box-shadow:0 5px 15px rgba(0,0,0,.15);
-}
-
-#navbar.active{
-    display:flex;
-}
-
-#navbar a{
-    padding:10px;
-    text-decoration:none;
-    color:#0B2E59;
-}
 
 
 /* Hamburger show */
@@ -1810,27 +1736,7 @@ small {
 nav * {
     font-family: "Inter", sans-serif !important;
 }
-/* ===================================
-   HERO SECTION FINAL OVERRIDE
-   Paste at END of style.css
-=================================== */
 
-/* Header */
-header{
-    background:#fff;
-    padding:15px 20px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    border-bottom:3px solid #D4AF37;
-}
-
-.logo img{
-    width:170px;
-    height:auto;
-    display:block;
-    margin:0 auto;
-}
 
 /* Hero */
 .page-hero,
@@ -1982,6 +1888,7 @@ header{
     }
 
 }
+  
 /* ===== FINAL HEADER FIX ===== */
 
 .main-header{
