@@ -2260,3 +2260,33 @@ header .header-logo img{
 }
 
 }
+/* ===== LOGO FINAL SIZE OVERRIDE ===== */
+
+.main-header .header-logo img{
+    width:300px !important;
+    height:auto !important;
+    display:block !important;
+}
+
+.main-header{
+    min-height:130px !important;
+}
+
+.main-header .header-top{
+    height:130px !important;
+}
+
+
+@media(max-width:768px){
+
+.main-header .header-logo img{
+    width:230px !important;
+}
+
+.main-header,
+.main-header .header-top{
+    min-height:100px !important;
+    height:100px !important;
+}
+
+}
