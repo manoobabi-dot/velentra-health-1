@@ -2189,3 +2189,34 @@ body{
         width:170px !important;
     }
 }
+/* ===== Force Logo Bigger All Pages ===== */
+
+header .header-logo img{
+    width:240px !important;
+    max-width:none !important;
+    height:auto !important;
+}
+
+/* Keep header height balanced */
+.main-header{
+    min-height:100px !important;
+}
+
+.header-top{
+    height:100px !important;
+}
+
+
+@media(max-width:768px){
+
+header .header-logo img{
+    width:180px !important;
+}
+
+.main-header,
+.header-top{
+    min-height:90px !important;
+    height:90px !important;
+}
+
+}
