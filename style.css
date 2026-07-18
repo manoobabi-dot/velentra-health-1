@@ -2078,3 +2078,31 @@ header{
     padding-bottom: 25px !important;
     line-height: 1.8;
 }
+/* ===== SERVICES HERO FINAL FIX ===== */
+
+.page-hero{
+    background:#123B6D !important;
+    color:#ffffff !important;
+    padding:90px 20px 110px !important;
+    text-align:center;
+}
+
+.page-hero .container{
+    max-width:900px;
+    margin:0 auto;
+}
+
+.page-hero h1{
+    font-size:48px !important;
+    line-height:1.2;
+    margin:0 0 25px 0 !important;
+    color:#ffffff !important;
+}
+
+.page-hero p{
+    font-size:20px;
+    line-height:1.8;
+    margin:0 !important;
+    color:#ffffff !important;
+    padding-bottom:20px !important;
+}
