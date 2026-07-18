@@ -2083,120 +2083,9 @@ body{
 #process .process-card h3{
     font-weight:700 !important;
   }
-/* ===== Logo Size Increase All Pages ===== */
-
-.header-logo img{
-    width:220px !important;
-    height:auto;
-}
-
-/* Mobile Logo */
-@media(max-width:768px){
-    .header-logo img{
-        width:170px !important;
-    }
-}
-/* ===== Force Logo Bigger All Pages ===== */
-
-header .header-logo img{
-    width:240px !important;
-    max-width:none !important;
-    height:auto !important;
-}
-
-/* Keep header height balanced */
-.main-header{
-    min-height:100px !important;
-}
-
-.header-top{
-    height:100px !important;
-}
 
 
-@media(max-width:768px){
 
-header .header-logo img{
-    width:180px !important;
-}
-
-.main-header,
-.header-top{
-    min-height:90px !important;
-    height:90px !important;
-}
-
-}
-/* ===== FINAL BIG LOGO FIX ===== */
-
-.header-logo{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-}
-
-.header-logo img{
-    width:280px !important;
-    height:auto !important;
-    max-width:none !important;
-}
-
-
-/* Header height adjust */
-.main-header{
-    min-height:120px !important;
-}
-
-.header-top{
-    height:120px !important;
-}
-
-
-@media(max-width:768px){
-
-.header-logo img{
-    width:220px !important;
-}
-
-.main-header{
-    min-height:100px !important;
-}
-
-.header-top{
-    height:100px !important;
-}
-
-}
-/* ===== LOGO FINAL SIZE OVERRIDE ===== */
-
-.main-header .header-logo img{
-    width:300px !important;
-    height:auto !important;
-    display:block !important;
-}
-
-.main-header{
-    min-height:130px !important;
-}
-
-.main-header .header-top{
-    height:130px !important;
-}
-
-
-@media(max-width:768px){
-
-.main-header .header-logo img{
-    width:230px !important;
-}
-
-.main-header,
-.main-header .header-top{
-    min-height:100px !important;
-    height:100px !important;
-}
-
-}
 /* ===== Logo Final Size Fix ===== */
 
 .header-logo img{
@@ -2229,35 +2118,6 @@ header .header-logo img{
 
 .header-top{
     height:100px !important;
-}
-
-}
-/* ===== FINAL LOGO SIZE ===== */
-
-.header-logo img{
-    width:260px !important;
-    max-width:none !important;
-    height:auto !important;
-}
-
-.header-logo{
-    display:flex;
-    align-items:center;
-}
-
-.header-top{
-    min-height:120px !important;
-}
-
-
-@media(max-width:768px){
-
-.header-logo img{
-    width:200px !important;
-}
-
-.header-top{
-    min-height:95px !important;
 }
 
 }
