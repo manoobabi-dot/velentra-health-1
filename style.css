@@ -1988,3 +1988,63 @@ header{
         width:220px;
     }
   }
+/* ===== HEADER OVERRIDE ===== */
+
+.main-header,
+header{
+    position:relative !important;
+}
+
+.header-top{
+    position:relative !important;
+    display:flex !important;
+    justify-content:center !important;
+    align-items:center !important;
+    height:90px !important;
+}
+
+/* Center Logo */
+.header-logo{
+    position:absolute !important;
+    left:50% !important;
+    top:50% !important;
+    transform:translate(-50%,-50%) !important;
+}
+
+.header-logo img{
+    width:180px !important;
+    height:auto !important;
+    max-width:none !important;
+}
+
+/* Hamburger Right */
+.menu-toggle{
+    position:absolute !important;
+    right:15px !important;
+    top:50% !important;
+    transform:translateY(-50%) !important;
+    display:flex !important;
+    z-index:9999 !important;
+}
+
+.menu-toggle span{
+    width:28px;
+    height:3px;
+    background:#123B6D;
+    border-radius:3px;
+}
+
+@media (max-width:768px){
+
+    .header-top{
+        height:85px !important;
+    }
+
+    .header-logo img{
+        width:160px !important;
+    }
+
+    .menu-toggle{
+        right:12px !important;
+    }
+}
