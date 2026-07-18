@@ -1892,16 +1892,7 @@ header{
 }
 
 
-.header-logo a{
-    display: inline-block !important;
-}
 
-.header-logo img{
-    width: 180px !important;
-    height: auto !important;
-    display: block !important;
-    margin: 0 auto !important;
-}
 
 .menu-toggle{
     position: absolute !important;
@@ -1926,18 +1917,7 @@ header{
     padding: 0;
 }
 
-.header-logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
 
-.header-logo img{
-    width: 185px;
-    height: auto;
-    display: block;
-}
 
 .menu-toggle{
     position: absolute;
@@ -1984,11 +1964,7 @@ header{
     width:100%;
 }
 
-.header-logo img{
-    width:195px;
-    height:auto;
-    display:block;
-}
+
 
 .menu-toggle{
     position:absolute;
@@ -2000,13 +1976,9 @@ header{
 
 @media (max-width:768px){
 
-    .header-top{
-        height:80px;
-    }
+    
 
-    .header-logo img{
-        width:170px;
-    }
+    
 
     .menu-toggle{
         right:15px;
@@ -2038,11 +2010,7 @@ header{
     transform:translate(-50%,-50%);
 }
 
-.header-logo img{
-    width:200px !important;
-    height:auto;
-    display:block;
-}
+
 
 .menu-toggle{
     position:absolute;
