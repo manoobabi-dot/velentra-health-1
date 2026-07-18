@@ -2062,3 +2062,19 @@ header{
     transform:translateY(-50%);
     z-index:101;
 }
+/* ===== SERVICES HERO SPACING FIX ===== */
+
+.page-hero{
+    padding: 90px 20px 120px !important;
+}
+
+.page-hero h1{
+    margin-bottom: 25px !important;
+}
+
+.page-hero p{
+    max-width: 850px;
+    margin: 0 auto;
+    padding-bottom: 25px !important;
+    line-height: 1.8;
+}
