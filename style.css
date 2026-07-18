@@ -1903,3 +1903,27 @@ header{
 }
 
 }
+/* ===== Center Logo on All Pages ===== */
+
+header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    position:relative;
+}
+
+.logo{
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.logo img{
+    width:170px;
+    height:auto;
+    display:block;
+}
+
+.menu-toggle{
+    margin-left:auto;
+  }
