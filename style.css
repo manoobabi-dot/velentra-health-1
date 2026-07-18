@@ -1903,126 +1903,7 @@ header{
 }
 
 }
-/* ===== Center Logo on All Pages ===== */
 
-header{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    position:relative;
-}
-
-.logo{
-    position:absolute;
-    left:50%;
-    transform:translateX(-50%);
-}
-
-.logo img{
-    width:170px;
-    height:auto;
-    display:block;
-}
-
-.menu-toggle{
-    margin-left:auto;
-  }
-/* ===== UNIVERSAL LOGO (ALL PAGES) ===== */
-
-header{
-    position: relative;
-    height: 90px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-    background: #fff;
-    border-bottom: 3px solid #D4AF37;
-}
-
-.logo{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 100;
-}
-
-.logo img{
-    width: 170px;
-    height: auto;
-    display: block;
-}
-
-.menu-toggle{
-    margin-left: auto;
-    z-index: 101;
-}
-
-/* Mobile */
-@media (max-width:768px){
-
-header{
-    height: 85px;
-}
-
-.logo img{
-    width: 165px;
-}
-
-  }
-/* ===== HOMEPAGE LOGO CENTER FIX ===== */
-
-.main-header{
-    position: relative;
-}
-
-.header-top{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 12px 20px;
-}
-
-.header-logo{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.header-logo img{
-    width: 170px;
-    height: auto;
-    display: block;
-}
-
-.menu-toggle{
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-/* ===== HOMEPAGE HEADER FIX ===== */
-
-.main-header{
-    position: relative !important;
-    min-height: 90px !important;
-}
-
-.header-top{
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    width: 100% !important;
-    padding: 12px 0 !important;
-}
-
-.header-logo{
-    position: static !important;
-    margin: 8px auto 0 !important;
-    text-align: center !important;
-}
 
 .header-logo a{
     display: inline-block !important;
@@ -2041,3 +1922,55 @@ header{
     top: 50% !important;
     transform: translateY(-50%) !important;
 }
+/* ===== FINAL HEADER & LOGO (ALL PAGES) ===== */
+
+.main-header{
+    position: relative;
+    background: #fff;
+    border-bottom: 3px solid #D4AF37;
+    min-height: 90px;
+}
+
+.header-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    padding: 0;
+}
+
+.header-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.header-logo img{
+    width: 185px;
+    height: auto;
+    display: block;
+}
+
+.menu-toggle{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media (max-width:768px){
+
+    .main-header{
+        min-height: 85px;
+    }
+
+    .header-top{
+        height: 85px;
+    }
+
+    .header-logo img{
+        width: 170px;
+    }
+
+  }
