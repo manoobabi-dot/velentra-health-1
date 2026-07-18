@@ -2020,7 +2020,7 @@ header{
 
 .header-logo{
     position: static !important;
-    margin: 0 auto !important;
+    margin: 8px auto 0 !important;
     text-align: center !important;
 }
 
