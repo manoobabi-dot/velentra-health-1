@@ -2106,3 +2106,19 @@ header{
     color:#ffffff !important;
     padding-bottom:20px !important;
 }
+/* Mobile Menu Compact */
+
+@media (max-width:768px){
+
+#navbar{
+    padding:10px 0;
+}
+
+#navbar a{
+    padding:8px 15px;
+    margin:2px 0;
+    font-size:15px;
+    line-height:1.2;
+}
+
+}
