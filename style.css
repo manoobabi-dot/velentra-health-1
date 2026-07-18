@@ -2127,3 +2127,52 @@ header{
 }
 
 }
+/* ===== Homepage Font Final Fix ===== */
+
+body{
+    font-family:"Inter", sans-serif !important;
+}
+
+/* All Homepage Headings */
+.about h2,
+#why-choose h2,
+#services h2,
+#process h2,
+#testimonials h2,
+#cta h2,
+.feature-card h3,
+.service-card h2,
+.process-card h3,
+.testimonial-card h4,
+#footer h3{
+    font-family:"Inter", sans-serif !important;
+    font-weight:700 !important;
+    letter-spacing:0 !important;
+}
+
+/* Homepage Paragraphs */
+.about p,
+#cta p,
+.testimonial-card p,
+#footer p{
+    font-family:"Inter", sans-serif !important;
+    font-weight:400 !important;
+    line-height:1.7 !important;
+}
+
+/* Service Cards */
+#services .service-card h2{
+    font-weight:600 !important;
+    font-size:22px !important;
+}
+
+/* Feature Cards */
+#why-choose .feature-card h3{
+    font-weight:600 !important;
+    font-size:20px !important;
+}
+
+/* Process Numbers */
+#process .process-card h3{
+    font-weight:700 !important;
+  }
