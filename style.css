@@ -1927,3 +1927,47 @@ header{
 .menu-toggle{
     margin-left:auto;
   }
+/* ===== UNIVERSAL LOGO (ALL PAGES) ===== */
+
+header{
+    position: relative;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background: #fff;
+    border-bottom: 3px solid #D4AF37;
+}
+
+.logo{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
+
+.logo img{
+    width: 170px;
+    height: auto;
+    display: block;
+}
+
+.menu-toggle{
+    margin-left: auto;
+    z-index: 101;
+}
+
+/* Mobile */
+@media (max-width:768px){
+
+header{
+    height: 85px;
+}
+
+.logo img{
+    width: 165px;
+}
+
+  }
