@@ -1649,42 +1649,6 @@ p{
 
 
 
-/* Hamburger show */
-.menu-toggle{
-    display:flex !important;
-    flex-direction:column;
-    gap:5px;
-    background:none;
-    border:none;
-    cursor:pointer;
-}
-
-.menu-toggle span{
-    width:28px;
-    height:3px;
-    background:#123B6D;
-}
-/* Hide menu by default */
-#navbar{
-    display:none !important;
-}
-
-/* Show only after clicking hamburger */
-#navbar.active{
-    display:flex !important;
-    flex-direction:column;
-    position:absolute;
-    top:70px;
-    right:10px;
-    width:240px;
-    background:#fff;
-    box-shadow:0 5px 15px rgba(0,0,0,.15);
-    z-index:999;
-}
-
-.menu-toggle{
-    display:flex !important;
-}
 /* ===============================
    GLOBAL FONT OVERRIDE
    Paste at the END of style.css
@@ -2084,40 +2048,3 @@ body{
     font-weight:700 !important;
   }
 
-
-
-/* ===== Logo Final Size Fix ===== */
-
-.header-logo img{
-    width:260px !important;
-    height:auto !important;
-}
-
-.header-logo{
-    width:auto !important;
-}
-
-.main-header{
-    min-height:120px !important;
-}
-
-.header-top{
-    height:120px !important;
-}
-
-
-@media(max-width:768px){
-
-.header-logo img{
-    width:200px !important;
-}
-
-.main-header{
-    min-height:100px !important;
-}
-
-.header-top{
-    height:100px !important;
-}
-
-}
