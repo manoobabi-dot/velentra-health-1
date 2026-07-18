@@ -1775,45 +1775,6 @@ nav * {
     top: 50% !important;
     transform: translateY(-50%) !important;
 }
-/* ===== FINAL HEADER & LOGO (ALL PAGES) ===== */
-
-.main-header{
-    position: relative;
-    background: #fff;
-    border-bottom: 3px solid #D4AF37;
-    min-height: 90px;
-}
-
-.header-top{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90px;
-    padding: 0;
-}
-
-
-
-.menu-toggle{
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-@media (max-width:768px){
-
-    .main-header{
-        min-height: 85px;
-    }
-
-    .header-top{
-        height: 85px;
-    }
-
-    
-
-  }
 
 
 
