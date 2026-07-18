@@ -1936,9 +1936,7 @@ header{
         height: 85px;
     }
 
-    .header-logo img{
-        width: 170px;
-    }
+    
 
   }
 /* ===== FINAL HEADER & LOGO ===== */
@@ -1957,12 +1955,6 @@ header{
     padding:0 20px;
 }
 
-.header-logo{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    width:100%;
-}
 
 
 
@@ -2003,12 +1995,6 @@ header{
     align-items:center;
 }
 
-.header-logo{
-    position:absolute;
-    left:50%;
-    top:50%;
-    transform:translate(-50%,-50%);
-}
 
 
 
@@ -2032,17 +2018,7 @@ header{
     align-items:center;
 }
 
-.header-logo{
-    position:absolute;
-    left:50%;
-    top:50%;
-    transform:translate(-50%,-50%);
-}
 
-.header-logo img{
-    width:200px !important;
-    height:auto;
-}
 
 .menu-toggle{
     position:absolute;
