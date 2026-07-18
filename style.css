@@ -1971,3 +1971,35 @@ header{
 }
 
   }
+/* ===== HOMEPAGE LOGO CENTER FIX ===== */
+
+.main-header{
+    position: relative;
+}
+
+.header-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 20px;
+}
+
+.header-logo{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header-logo img{
+    width: 170px;
+    height: auto;
+    display: block;
+}
+
+.menu-toggle{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
