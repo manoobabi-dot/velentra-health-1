@@ -1974,3 +1974,55 @@ header{
     }
 
   }
+/* ===== FINAL HEADER & LOGO ===== */
+
+.main-header{
+    background:#fff;
+    border-bottom:3px solid #D4AF37;
+}
+
+.header-top{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    height:90px;
+    padding:0 20px;
+}
+
+.header-logo{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+}
+
+.header-logo img{
+    width:195px;
+    height:auto;
+    display:block;
+}
+
+.menu-toggle{
+    position:absolute;
+    right:20px;
+    top:50%;
+    transform:translateY(-50%);
+    z-index:1000;
+}
+
+@media (max-width:768px){
+
+    .header-top{
+        height:80px;
+    }
+
+    .header-logo img{
+        width:170px;
+    }
+
+    .menu-toggle{
+        right:15px;
+    }
+
+}
