@@ -1853,55 +1853,7 @@ nav * {
 
 }
   
-/* ===== FINAL HEADER FIX ===== */
 
-.main-header{
-    position:sticky;
-    top:0;
-    background:#fff;
-    border-bottom:2px solid #D4AF37;
-    z-index:9999;
-}
-
-.header-top{
-    position:relative;
-    height:90px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
-
-
-
-.menu-toggle{
-    position:absolute;
-    right:20px;
-    top:50%;
-    transform:translateY(-50%);
-}
-/* ===== FINAL HEADER ALIGNMENT ===== */
-
-.main-header{
-    position:relative;
-}
-
-.header-top{
-    position:relative;
-    height:90px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
-
-
-.menu-toggle{
-    position:absolute;
-    right:20px;
-    top:50%;
-    transform:translateY(-50%);
-}
 
 /* ===== SERVICES HERO SPACING FIX ===== */
 
