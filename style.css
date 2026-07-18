@@ -2058,3 +2058,58 @@ header{
         right:15px !important;
     }
 }
+/* ===== FINAL HEADER FIX ===== */
+
+.main-header,
+header{
+    position:relative !important;
+}
+
+.header-top{
+    position:relative !important;
+    display:flex !important;
+    justify-content:center !important;
+    align-items:center !important;
+    height:100px !important;
+}
+
+/* Center Logo */
+.header-logo{
+    position:absolute !important;
+    left:50% !important;
+    top:50% !important;
+    transform:translate(-50%,-50%) !important;
+}
+
+.header-logo img,
+.logo img{
+    width:240px !important;
+    height:auto !important;
+    display:block;
+}
+
+/* Menu Button Right */
+.menu-toggle{
+    position:absolute !important;
+    right:20px !important;
+    top:50% !important;
+    transform:translateY(-50%) !important;
+    z-index:9999 !important;
+}
+
+/* Mobile */
+@media (max-width:768px){
+
+    .header-top{
+        height:90px !important;
+    }
+
+    .header-logo img,
+    .logo img{
+        width:200px !important;
+    }
+
+    .menu-toggle{
+        right:15px !important;
+    }
+}
