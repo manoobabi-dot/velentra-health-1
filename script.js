@@ -20,3 +20,10 @@ if (menuToggle && navbar) {
     window.addEventListener("pageshow", closeMenu);
     window.addEventListener("load", closeMenu);
 }
+document.addEventListener("click", (e)=>{
+
+    if(!navbar.contains(e.target) && !menuToggle.contains(e.target)){
+        closeMenu();
+    }
+
+});
