@@ -1837,3 +1837,16 @@ body{
     flex-direction:column;
     justify-content:center;
 }
+/* Header Logo */
+.header-logo img,
+.logo{
+    width:140px !important;
+    height:auto !important;
+}
+
+/* Hero Banner */
+.hero-image{
+    width:100%;
+    height:auto !important;
+    display:block;
+}
