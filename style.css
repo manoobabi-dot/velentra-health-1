@@ -1893,3 +1893,111 @@ body{
 }
 
   }
+/* ========================================================
+   💥 CENTURED LOGO & RIGHT SIDE MENU FIX (MOBILE) 💥
+   ======================================================== */
+
+@media (max-width: 768px) {
+  
+  /* Header Wrapper Setup */
+  header, .main-header {
+    height: 70px !important;
+    padding: 0 20px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important; /* Logo ko center me rakhne ke liye */
+    position: sticky !important;
+    top: 0;
+    background: #ffffff !important;
+    z-index: 9999 !important;
+  }
+
+  /* 1. Logo Centering Fix */
+  .header-logo, .logo, .header-top {
+    position: static !important;
+    margin: 0 auto !important; /* Center alignment */
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  .header-logo img, .logo img {
+    max-width: 130px !important;
+    height: auto !important;
+  }
+
+  /* 2. Hamburger Button Positioned Right */
+  .menu-toggle {
+    display: flex !important;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute !important;
+    right: 20px !important; /* Extreme right side */
+    top: 50% !important;
+    transform: translateY(-50%) !important; /* Perfectly vertical center */
+    background: none !important;
+    border: none !important;
+    cursor: pointer;
+    z-index: 10001 !important;
+  }
+
+  /* Hamburger lines styling */
+  .menu-toggle span {
+    display: block !important;
+    width: 25px !important;
+    height: 3px !important;
+    background: #123B6D !important;
+    border-radius: 5px !important;
+    transition: all 0.3s ease !important;
+  }
+
+  /* 3. Hamburger to Cross (X) Animation */
+  .menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px) !important;
+  }
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0 !important;
+  }
+  .menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px) !important;
+  }
+
+  /* 4. Right Side Drawer Menu Overlay */
+  nav, #navbar {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    position: fixed !important;
+    top: 0 !important;
+    right: -100% !important; /* Default me screen se bahar right side par chupa hoga */
+    width: 280px !important; /* Menu ki chaudaai */
+    height: 100vh !important;
+    background: #ffffff !important;
+    padding-top: 80px !important; /* Top space taake cross button dikhe */
+    box-shadow: -5px 0 15px rgba(0,0,0,0.1) !important;
+    transition: right 0.4s ease !important; /* Smooth slide-in animation */
+    z-index: 10000 !important;
+  }
+
+  /* Active State - Jab right side se screen par aaye */
+  nav.active, #navbar.active {
+    right: 0 !important; 
+  }
+
+  /* Navigation Links Styling Inside Drawer */
+  nav a, #navbar a {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    padding: 15px 0 !important;
+    margin: 0 !important;
+    font-size: 16px !important;
+    color: #123B6D !important;
+    border-bottom: 1px solid #f0f0f0 !important;
+  }
+  
+  nav a:last-child, #navbar a:last-child {
+    border-bottom: none !important;
+  }
+}
+  
