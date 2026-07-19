@@ -1834,3 +1834,62 @@ body{
 }
 
 }
+/* ===== Mobile Header Final Fix ===== */
+
+@media(max-width:768px){
+
+.header-top{
+    height:70px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+
+
+/* Center Logo */
+
+.header-logo img{
+    width:145px;
+    height:auto;
+}
+
+
+/* Hamburger Right */
+
+.menu-toggle{
+    display:flex !important;
+    position:absolute;
+    right:18px;
+    top:23px;
+}
+
+
+/* Hide Pages */
+
+#navbar{
+    display:none !important;
+}
+
+
+/* Show Only When Open */
+
+#navbar.active{
+    display:flex !important;
+    position:absolute;
+    top:70px;
+    left:0;
+    width:100%;
+    background:#fff;
+    flex-direction:column;
+    padding:15px 0;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+
+#navbar a{
+    text-align:center;
+    padding:12px;
+}
+
+  }
