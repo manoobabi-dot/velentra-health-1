@@ -1913,7 +1913,7 @@ body{
 
   /* Header Top Bar layout */
   .header-top {
-    height: 100% !important;
+    height: 120% !important;
     padding: 0 15px !important;
     display: flex !important;
     align-items: center !important;
