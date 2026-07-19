@@ -1817,27 +1817,3 @@ body{
     flex-wrap:wrap;
 }
 
-@media(max-width:768px){
-
-    .header-top{
-        height:65px !important;
-    }
-
-    .header-logo img,
-    .logo{
-        width:90px !important;
-    }
-
-    .menu-toggle{
-        display:flex !important;
-    }
-
-    #navbar{
-        display:none;
-        flex-direction:column;
-    }
-
-    #navbar.active{
-        display:flex;
-    }
-}
