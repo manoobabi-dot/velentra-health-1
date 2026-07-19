@@ -2063,4 +2063,18 @@ header, .main-header, .header-top {
     height: auto !important;
   }
 }
+  @media (max-width: 768px) {
+  /* 1. Menubar ki total height aur spacing ko short kiya */
+  #navbar {
+    padding-top: 60px !important;   /* Top spacing ko kam kiya */
+    width: 250px !important;        /* Width ko thoda mazeed sleek kiya */
+  }
+
+  /* 2. Links ke beech ka fuzool gap aur text size kam kiya */
+  #navbar a {
+    padding: 10px 0 !important;     /* Pehle 15px/14px padding thi, ab kam kar di */
+    font-size: 15px !important;     /* Text ko clean aur crisp kiya */
+    border-bottom: 1px solid #f0f0f0 !important;
+  }
+  }
   
