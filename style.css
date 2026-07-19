@@ -2025,3 +2025,13 @@ body{
   }
 }
   
+/* Direct Header Height Boost */
+header, .main-header, .header-top {
+    height: 140px !important; /* Aap is number ko 150px ya 160px bhi kar sakti hain agar aur bada chahiye */
+}
+
+/* Banner image ko forced niche push karne ke liye */
+.hero, .hero-image, .page-banner {
+    margin-top: 20px !important; 
+}
+  
