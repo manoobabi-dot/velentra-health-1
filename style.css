@@ -1744,21 +1744,18 @@ body{
         height:auto;
     }
       }
-/* ===== Mobile Header Center Fix ===== */
 @media (max-width:768px){
 
 .header-top{
-    position:relative;
     display:flex;
+    justify-content:space-between;
     align-items:center;
-    justify-content:center;
     padding:12px 20px;
 }
 
 .header-logo{
-    position:absolute;
-    left:50%;
-    transform:translateX(-50%);
+    position:static;
+    transform:none;
 }
 
 .header-logo img{
@@ -1767,10 +1764,8 @@ body{
 }
 
 .menu-toggle{
-    position:absolute;
-    right:20px;
-    top:50%;
-    transform:translateY(-50%);
+    display:flex;
+    flex-direction:column;
 }
 
-}
+      }
