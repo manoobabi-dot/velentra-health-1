@@ -1342,25 +1342,7 @@ section{
 }
 
 
-.hero-image{
-    width:100%;
-    height:auto;
-}
 
-section{
-    padding:50px 20px;
-}
-
-h2{
-    font-size:28px !important;
-}
-
-/* Cards */
-.features,
-.services-grid,
-.process-grid{
-    grid-template-columns:1fr;
-}
 
 /* Testimonials */
 .testimonial-slider{
