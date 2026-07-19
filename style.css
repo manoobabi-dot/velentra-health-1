@@ -1894,15 +1894,14 @@ body{
 
   }
 /* ========================================================
-   💥 VELENTRA HEALTH - PERFECT MOBILE HEADER FIX 💥
+   💥 VELENTRA HEALTH - THE ULTIMATE DRILL-DOWN FIX 💥
    ======================================================== */
 
 @media (max-width: 768px) {
   
-  /* 1. Main Header ko simple static ya sticky wrapper banayein */
   header, .main-header {
     position: sticky !important;
-    top: 0;
+    top: 0 !important;
     width: 100% !important;
     background: #ffffff !important;
     z-index: 9999 !important;
@@ -1910,38 +1909,35 @@ body{
     box-shadow: 0 3px 12px rgba(0,0,0,.08) !important;
   }
 
-  /* 2. Header Top Bar (Isme logo center hoga aur button absolute right) */
   .header-top {
     height: 75px !important;
     padding: 0 20px !important;
     display: flex !important;
     align-items: center !important;
-    justify-content: center !important; /* Logo perfectly center */
-    position: relative !important; /* Button ko right par chipkane ke liye */
+    justify-content: center !important; /* Logo center */
+    position: relative !important;
     width: 100% !important;
   }
 
-  /* Logo Size Adjustment */
   .header-logo img {
     max-width: 140px !important;
     height: auto !important;
     display: block !important;
   }
 
-  /* 3. Hamburger Button (Absolute Position Right Side) */
+  /* Hamburger Button */
   .menu-toggle {
     display: flex !important;
     flex-direction: column !important;
     gap: 5px !important;
     position: absolute !important;
-    right: 20px !important; /* Extreme right */
+    right: 20px !important;
     top: 50% !important;
-    transform: translateY(-50%) !important; /* Perfectly center aligned vertically */
+    transform: translateY(-50%) !important;
     background: none !important;
     border: none !important;
     cursor: pointer !important;
     z-index: 10001 !important;
-    padding: 10px !important;
   }
 
   .menu-toggle span {
@@ -1964,36 +1960,34 @@ body{
     transform: rotate(-45deg) translate(6px, -6px) !important;
   }
 
-  /* 4. Right Side Drawer Menu (Default Screen se Bahar) */
+  /* 🛠️ FORCE HIDE DEFAULT STATE */
   #navbar {
-    display: flex !important;
+    display: none !important; /* Default me menu bilkul gayab rahega */
     flex-direction: column !important;
     justify-content: flex-start !important;
     align-items: center !important;
     position: fixed !important;
     top: 0 !important;
-    right: -100% !important; /* Hidden state */
-    width: 280px !important; /* Drawer narrow width */
+    right: 0 !important; 
+    width: 280px !important;
     height: 100vh !important;
     background: #ffffff !important;
-    padding-top: 90px !important; /* Spacing taake links cross button ke niche aayen */
+    padding-top: 90px !important;
     box-shadow: -5px 0 15px rgba(0,0,0,0.1) !important;
-    transition: right 0.3s ease-in-out !important; /* Smooth animation */
     z-index: 10000 !important;
   }
 
-  /* Active Drawer (Jab click hone par samne aaye) */
+  /* 🛠️ FORCE SHOW ONLY WHEN ACTIVE */
   #navbar.active {
-    right: 0 !important; 
+    display: flex !important; /* Jab class active hogi sirf tabhi samne aayega */
   }
 
-  /* Links Layout inside Drawer */
   #navbar a {
     display: block !important;
     width: 100% !important;
     text-align: center !important;
     padding: 14px 0 !important;
-    margin: 0 !important; /* Horizontal gaps zero */
+    margin: 0 !important;
     font-size: 16px !important;
     color: #123B6D !important;
     border-bottom: 1px solid #f5f5f5 !important;
@@ -2002,5 +1996,5 @@ body{
   #navbar a:last-child {
     border-bottom: none !important;
   }
-}
+    }
   
