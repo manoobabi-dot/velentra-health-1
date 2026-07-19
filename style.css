@@ -1894,55 +1894,54 @@ body{
 
   }
 /* ========================================================
-   💥 VELENTRA HEALTH - FINAL MOBILE HEADER FIX 💥
+   💥 VELENTRA HEALTH - PERFECT MOBILE HEADER FIX 💥
    ======================================================== */
 
 @media (max-width: 768px) {
   
-  /* Header Wrapper Setup */
+  /* 1. Main Header ko simple static ya sticky wrapper banayein */
   header, .main-header {
-    height: 75px !important;
-    padding: 0 20px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important; /* Logo ko hamesha center me rakhega */
     position: sticky !important;
     top: 0;
+    width: 100% !important;
     background: #ffffff !important;
     z-index: 9999 !important;
     border-bottom: 2px solid #D4AF37 !important;
     box-shadow: 0 3px 12px rgba(0,0,0,.08) !important;
   }
 
-  /* 1. Logo Centering Logic */
-  .header-logo, .logo, .header-top {
-    position: static !important;
-    margin: 0 auto !important; /* Horizontally centered */
+  /* 2. Header Top Bar (Isme logo center hoga aur button absolute right) */
+  .header-top {
+    height: 75px !important;
+    padding: 0 20px !important;
     display: flex !important;
     align-items: center !important;
-    justify-content: center !important;
+    justify-content: center !important; /* Logo perfectly center */
+    position: relative !important; /* Button ko right par chipkane ke liye */
+    width: 100% !important;
   }
 
-  .header-logo img, .logo img {
-    max-width: 140px !important; /* Mobile friendly size */
+  /* Logo Size Adjustment */
+  .header-logo img {
+    max-width: 140px !important;
     height: auto !important;
     display: block !important;
   }
 
-  /* 2. Hamburger Button Position (Right Side) */
+  /* 3. Hamburger Button (Absolute Position Right Side) */
   .menu-toggle {
     display: flex !important;
     flex-direction: column !important;
     gap: 5px !important;
     position: absolute !important;
-    right: 20px !important; /* Extreme right side */
+    right: 20px !important; /* Extreme right */
     top: 50% !important;
-    transform: translateY(-50%) !important;
+    transform: translateY(-50%) !important; /* Perfectly center aligned vertically */
     background: none !important;
     border: none !important;
     cursor: pointer !important;
     z-index: 10001 !important;
-    padding: 5px !important;
+    padding: 10px !important;
   }
 
   .menu-toggle span {
@@ -1954,7 +1953,7 @@ body{
     transition: all 0.3s ease !important;
   }
 
-  /* 3. Cross (X) Animation Logic */
+  /* Cross (X) Animation */
   .menu-toggle.active span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px) !important;
   }
@@ -1965,43 +1964,43 @@ body{
     transform: rotate(-45deg) translate(6px, -6px) !important;
   }
 
-  /* 4. Right Side Drawer Menu - Default Hidden State */
-  nav, #navbar {
+  /* 4. Right Side Drawer Menu (Default Screen se Bahar) */
+  #navbar {
     display: flex !important;
     flex-direction: column !important;
     justify-content: flex-start !important;
     align-items: center !important;
     position: fixed !important;
     top: 0 !important;
-    right: -100% !important; /* Screen se bahar hidden rahega */
-    width: 280px !important; /* Drawer width */
+    right: -100% !important; /* Hidden state */
+    width: 280px !important; /* Drawer narrow width */
     height: 100vh !important;
     background: #ffffff !important;
-    padding-top: 90px !important; /* Spacing taake links overlap na hon */
+    padding-top: 90px !important; /* Spacing taake links cross button ke niche aayen */
     box-shadow: -5px 0 15px rgba(0,0,0,0.1) !important;
-    transition: right 0.3s ease-in-out !important; /* Smooth sliding transition */
+    transition: right 0.3s ease-in-out !important; /* Smooth animation */
     z-index: 10000 !important;
   }
 
-  /* 5. Jab Active Ho to Screen Par Aaye */
-  nav.active, #navbar.active {
+  /* Active Drawer (Jab click hone par samne aaye) */
+  #navbar.active {
     right: 0 !important; 
   }
 
-  /* Links Layout Inside Menu Drawer */
-  nav a, #navbar a {
+  /* Links Layout inside Drawer */
+  #navbar a {
     display: block !important;
     width: 100% !important;
     text-align: center !important;
-    padding: 15px 0 !important;
-    margin: 0 !important; /* Purana horizontal margin zero kiya */
+    padding: 14px 0 !important;
+    margin: 0 !important; /* Horizontal gaps zero */
     font-size: 16px !important;
     color: #123B6D !important;
     border-bottom: 1px solid #f5f5f5 !important;
   }
   
-  nav a:last-child, #navbar a:last-child {
+  #navbar a:last-child {
     border-bottom: none !important;
   }
-    }
-    
+}
+  
