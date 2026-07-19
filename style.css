@@ -1904,7 +1904,7 @@ body{
     position: relative !important;
     display: block !important;
     width: 100% !important;
-    height: 120px !important; /* 👈 Height badha di gayi ha */
+    height:100px !important; /* 👈 Height badha di gayi ha */
     background: #ffffff !important;
     z-index: 9999 !important;
     border-bottom: 3px solid #D4AF37 !important; /* Border thoda mota kiya look ke liye */
