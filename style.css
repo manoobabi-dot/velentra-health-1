@@ -1707,4 +1707,48 @@ body{
 #process .process-card h3{
     font-weight:700 !important;
   }
+/* ===== Hamburger Menu ===== */
 
+.menu-toggle{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:5px;
+    width:40px;
+    height:40px;
+    background:none;
+    border:none;
+    cursor:pointer;
+    position:absolute;
+    right:20px;
+    top:50%;
+    transform:translateY(-50%);
+    z-index:1000;
+}
+
+.menu-toggle span{
+    width:28px;
+    height:3px;
+    background:#123B6D;
+    border-radius:3px;
+}
+
+#navbar{
+    display:none;
+}
+
+#navbar.active{
+    display:flex;
+    flex-direction:column;
+}
+
+@media (min-width:769px){
+    .menu-toggle{
+        display:none;
+    }
+
+    #navbar{
+        display:flex;
+    }
+}
