@@ -1818,7 +1818,7 @@ body{
 
 .header-logo img,
 .logo{
-    width:140px !important;
+    width:120px !important;
     height:auto !important;
 }
 
@@ -1836,7 +1836,7 @@ body{
 
     .header-logo img,
     .logo{
-        width:110px !important;
+        width:90px !important;
     }
 
     .menu-toggle{
