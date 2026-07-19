@@ -1707,27 +1707,41 @@ body{
 #process .process-card h3{
     font-weight:700 !important;
   }
-/* ===== Hamburger Menu ===== */
+/* ===== FINAL HAMBURGER FIX ===== */
+
+.header-top{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:90px;
+}
+
+.header-logo img{
+    width:200px;
+    height:auto;
+}
 
 .menu-toggle{
-    display:flex;
+    display:flex !important;
     flex-direction:column;
     justify-content:center;
     align-items:center;
     gap:5px;
     width:40px;
     height:40px;
-    background:none;
-    border:none;
-    cursor:pointer;
     position:absolute;
     right:20px;
     top:50%;
     transform:translateY(-50%);
-    z-index:1000;
+    background:none;
+    border:none;
+    cursor:pointer;
+    z-index:9999;
 }
 
 .menu-toggle span{
+    display:block;
     width:28px;
     height:3px;
     background:#123B6D;
@@ -1741,14 +1755,4 @@ body{
 #navbar.active{
     display:flex;
     flex-direction:column;
-}
-
-@media (min-width:769px){
-    .menu-toggle{
-        display:flex;
-    }
-
-    #navbar{
-        display:flex;
-    }
-}
+  }
