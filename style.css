@@ -1820,3 +1820,23 @@ body{
 .menu-toggle.active span:nth-child(3){
     transform:rotate(-45deg) translate(6px,-6px);
 }
+/* ===== DESKTOP ONLY FIX ===== */
+@media (min-width: 769px){
+
+.header-top{
+    height:80px !important;
+    justify-content:center !important;
+}
+
+.header-logo img{
+    width:140px !important;
+    height:auto !important;
+}
+
+.hero-image{
+    width:100%;
+    height:auto !important;
+    object-fit:contain !important;
+}
+
+}
