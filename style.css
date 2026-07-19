@@ -1788,7 +1788,7 @@ body{
     display:flex !important;
     justify-content:center !important;
     align-items:center !important;
-    height:90px !important;
+    height:100px !important;
     padding:0 20px !important;
 }
 
@@ -1821,7 +1821,7 @@ body{
 
 .header-logo img,
 .logo{
-    width:120px !important;
+    width:110px !important;
     height:auto !important;
 }
 
