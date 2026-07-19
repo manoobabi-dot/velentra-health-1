@@ -1820,33 +1820,3 @@ body{
 .menu-toggle.active span:nth-child(3){
     transform:rotate(-45deg) translate(6px,-6px);
 }
-/* ===== FINAL SERVICES GRID FIX ===== */
-
-.services-grid{
-    max-width:1200px;
-    margin:0 auto;
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:30px;
-}
-
-.services-section .service-card{
-    width:100%;
-    min-height:260px;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-}
-/* Header Logo */
-.header-logo img,
-.logo{
-    width:140px !important;
-    height:auto !important;
-}
-
-/* Hero Banner */
-.hero-image{
-    width:100%;
-    height:auto !important;
-    display:block;
-}
