@@ -619,41 +619,7 @@ nav a:hover{
     color:#d7e5f5;
 }
 
-.services-section{
-    padding:80px 20px;
-    background:#f8fafc;
-}
 
-.services-section .container{
-    max-width:1200px;
-    margin:auto;
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:30px;
-}
-
-.service-card{
-    background:#fff;
-    padding:35px;
-    border-radius:16px;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-    transition:.3s;
-}
-
-.service-card:hover{
-    transform:translateY(-8px);
-}
-
-.service-card h2{
-    color:#0f2d52;
-    margin-bottom:15px;
-    font-size:24px;
-}
-
-.service-card p{
-    color:#555;
-    line-height:1.8;
-}
 /* ==========================
    HEALTHCARE PAGE
 ========================== */
