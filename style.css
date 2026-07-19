@@ -1847,21 +1847,3 @@ body{
         width:120px;
     }
   }
-/* ===== Desktop Header Height Fix ===== */
-@media (min-width:769px){
-
-.header-top{
-    padding:8px 30px !important;
-    min-height:70px !important;
-}
-
-.header-logo img{
-    width:120px !important;
-    height:auto !important;
-}
-
-#navbar{
-    padding:10px 0 !important;
-}
-
-}
