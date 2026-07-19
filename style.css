@@ -1707,52 +1707,57 @@ body{
 #process .process-card h3{
     font-weight:700 !important;
   }
-/* ===== FINAL HAMBURGER FIX ===== */
+/* ===== Mobile Hamburger Menu ===== */
 
 .header-top{
-    position:relative;
     display:flex;
-    justify-content:center;
+    justify-content:space-between;
     align-items:center;
-    height:90px;
-}
-
-.header-logo img{
-    width:200px;
-    height:auto;
+    padding:15px 20px;
 }
 
 .menu-toggle{
-    display:flex !important;
+    display:none;
     flex-direction:column;
-    justify-content:center;
-    align-items:center;
     gap:5px;
-    width:40px;
-    height:40px;
-    position:absolute;
-    right:20px;
-    top:50%;
-    transform:translateY(-50%);
     background:none;
     border:none;
     cursor:pointer;
-    z-index:9999;
 }
 
 .menu-toggle span{
-    display:block;
     width:28px;
     height:3px;
     background:#123B6D;
     border-radius:3px;
 }
 
-#navbar{
-    display:none;
-}
+@media (max-width:768px){
 
-#navbar.active{
-    display:flex;
-    flex-direction:column;
-  }
+    .menu-toggle{
+        display:flex;
+    }
+
+    #navbar{
+        display:none;
+        flex-direction:column;
+        width:100%;
+        background:#fff;
+        padding:15px 0;
+    }
+
+    #navbar.active{
+        display:flex;
+    }
+
+    #navbar a{
+        display:block;
+        margin:12px 0;
+        text-align:center;
+    }
+
+    .logo{
+        width:120px;
+        height:auto;
+    }
+      }
