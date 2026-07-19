@@ -1,9 +1,22 @@
-window.onload = function () {
-  const button = document.querySelector(".hero button");
+const menuToggle = document.getElementById("menu-toggle");
+const navbar = document.getElementById("navbar");
 
-  if (button) {
-    button.onclick = function () {
-      alert("Welcome to Velentra Health! Thank you for visiting.");
-    };
-  }
-};
+if (menuToggle && navbar) {
+
+    function closeMenu() {
+        navbar.classList.remove("active");
+        menuToggle.classList.remove("active");
+    }
+
+    menuToggle.addEventListener("click", () => {
+        navbar.classList.toggle("active");
+        menuToggle.classList.toggle("active");
+    });
+
+    document.querySelectorAll("#navbar a").forEach(link => {
+        link.addEventListener("click", closeMenu);
+    });
+
+    window.addEventListener("pageshow", closeMenu);
+    window.addEventListener("load", closeMenu);
+}
