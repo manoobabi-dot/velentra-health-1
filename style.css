@@ -2034,4 +2034,33 @@ header, .main-header, .header-top {
 .hero, .hero-image, .page-banner {
     margin-top: 10px !important; 
 }
+@media (max-width: 768px) {
+  /* 1. Header ko solid white rakhna ha aur thoda bada karna ha */
+  header, .main-header, .header-top {
+    background-color: #ffffff !important;
+    height: 110px !important; /* Height thodi badha di taake logo khul sake */
+    position: relative !important;
+    z-index: 9999 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  /* 2. Logo ko wapas BADA aur clear kar diya */
+  .header-logo img, .logo img {
+    max-height: 90px !important; /* Logo ko bada kar diya taake saaf dikhe */
+    width: auto !important;
+    object-fit: contain !important;
+  }
+
+  /* 3. Banner ko bilkul default natural position par le aaye taake ye bilkul na chhupe */
+  .hero, .hero-image, .page-banner {
+    margin-top: 0 !important;
+    position: relative !important;
+    z-index: 1 !important;
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+}
   
