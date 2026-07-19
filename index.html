@@ -248,8 +248,11 @@
         <p>&copy; 2026 Velentra Health. All Rights Reserved.</p>
     </div>
 </footer>
-<script>
+<!-- 1. Pehle main script.js load hogi jo mobile menu ko handle karegi -->
+<script src="script.js"></script>
 
+<!-- 2. Phir aapka testimonial slider chalega -->
+<script>
 const track = document.querySelector(".testimonial-track");
 const cards = document.querySelectorAll(".testimonial-card");
 const nextBtn = document.querySelector(".next-btn");
@@ -257,32 +260,31 @@ const prevBtn = document.querySelector(".prev-btn");
 
 let index = 0;
 
-nextBtn.addEventListener("click", () => {
-    if(index < cards.length - 1){
-        index++;
+// Yahan hum safety check laga rahe hain taake agar kisi page par slider na ho to code crash na kare
+if (track && cards.length > 0 && nextBtn && prevBtn) {
+    nextBtn.addEventListener("click", () => {
+        if(index < cards.length - 1){
+            index++;
+            track.style.transform = `translateX(-${index * 100}%)`;
+        }
+    });
+
+    prevBtn.addEventListener("click", () => {
+        if(index > 0){
+            index--;
+            track.style.transform = `translateX(-${index * 100}%)`;
+        }
+    });
+
+    setInterval(() => {
+        if(index < cards.length - 1){
+            index++;
+        } else {
+            index = 0;
+        }
         track.style.transform = `translateX(-${index * 100}%)`;
-    }
-});
-
-prevBtn.addEventListener("click", () => {
-    if(index > 0){
-        index--;
-        track.style.transform = `translateX(-${index * 100}%)`;
-    }
-});
-setInterval(() => {
-
-    if(index < cards.length - 1){
-        index++;
-    } else {
-        index = 0;
-    }
-
-    track.style.transform = `translateX(-${index * 100}%)`;
-
-}, 4000);
- 
+    }, 4000);
+}
 </script>
- <script src="script.js"></script>
 </body>
 </html>
