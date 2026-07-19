@@ -1739,22 +1739,33 @@ body{
     }
 
     #navbar{
-        display:none;
-        flex-direction:column;
-        width:100%;
-        background:#fff;
-        padding:15px 0;
-    }
+    display:none;
+    position:absolute;
+    top:70px;
+    right:10px;
+    width:220px;
+    background:#fff;
+    flex-direction:column;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    padding:10px 0;
+}
 
-    #navbar.active{
-        display:flex;
-    }
+#navbar.active{
+    display:flex;
+}
 
-    #navbar a{
-        display:block;
-        margin:12px 0;
-        text-align:center;
-    }
+#navbar a{
+    display:block;
+    padding:12px 20px;
+    margin:0;
+    text-align:left;
+    border-bottom:1px solid #eee;
+}
+
+#navbar a:last-child{
+    border-bottom:none;
+}
 
     .logo{
         width:120px;
