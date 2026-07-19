@@ -1773,11 +1773,25 @@ body{
 }
 
 .header-top{
+    position:relative !important;
     display:flex !important;
-    justify-content:space-between !important;
+    justify-content:center !important;
     align-items:center !important;
     height:70px !important;
     padding:0 20px !important;
+}
+
+.header-logo{
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+.menu-toggle{
+    position:absolute;
+    right:20px;
+    top:50%;
+    transform:translateY(-50%);
 }
 
 .header-logo img,
