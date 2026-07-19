@@ -3,15 +3,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const navbar = document.getElementById("navbar");
 
     if (menuToggle && navbar) {
-        // Toggle menu on click
+        // 1. Menu open aur close karne ke liye toggle function
         menuToggle.addEventListener("click", (e) => {
             e.stopPropagation();
             menuToggle.classList.toggle("active");
             navbar.classList.toggle("active");
-            console.log("Menu Toggled! Active state:", navbar.classList.contains("active"));
         });
 
-        // Close menu when clicking a link
+        // 2. Kisi bhi link par click karte hi menu khud band ho jaye
         document.querySelectorAll("#navbar a").forEach(link => {
             link.addEventListener("click", () => {
                 menuToggle.classList.remove("active");
@@ -19,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
 
-        // Close menu when clicking outside
+        // 3. Menu ke baahar click karne se menu close ho jaye
         document.addEventListener("click", (e) => {
             if (!navbar.contains(e.target) && !menuToggle.contains(e.target)) {
                 menuToggle.classList.remove("active");
