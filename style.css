@@ -1761,44 +1761,7 @@ body{
         height:auto;
     }
       }
-/* ===== Universal Header ===== */
 
-header{
-    padding:0;
-}
-
-.header-top{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    height:80px;
-    padding:0 20px;
-}
-
-.header-logo img,
-.logo{
-    width:150px;
-    height:auto;
-}
-
-nav{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-}
-
-@media (max-width:768px){
-
-    .header-top{
-        height:75px;
-        padding:0 15px;
-    }
-
-    .header-logo img,
-    .logo{
-        width:120px;
-    }
-  }
 /* ===== Universal Header ===== */
 
 .main-header{
