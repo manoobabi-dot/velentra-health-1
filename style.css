@@ -1675,24 +1675,6 @@ nav * {
     line-height:1.7;
 }
 
-.logo img{
-    width:145px;
-}
-
-}
-
-
-
-
-.menu-toggle{
-    position: absolute !important;
-    right: 20px !important;
-    top: 50% !important;
-    transform: translateY(-50%) !important;
-}
-
-
-
 /* ===== SERVICES HERO SPACING FIX ===== */
 
 .page-hero{
