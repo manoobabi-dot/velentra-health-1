@@ -1799,3 +1799,40 @@ nav{
         width:120px;
     }
   }
+/* ===== Universal Header ===== */
+
+.main-header{
+    background:#fff;
+    border-bottom:2px solid #D4AF37;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.header-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:80px;
+    padding:0 20px;
+}
+
+.header-logo img,
+.logo{
+    width:140px !important;
+    height:auto;
+    display:block;
+}
+
+@media (max-width:768px){
+
+    .header-top{
+        height:70px;
+        padding:0 15px;
+    }
+
+    .header-logo img,
+    .logo{
+        width:110px !important;
+    }
+}
