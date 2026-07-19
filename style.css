@@ -2048,7 +2048,7 @@ header, .main-header, .header-top {
 
   /* 2. Logo ko wapas BADA aur clear kar diya */
   .header-logo img, .logo img {
-    max-height: 90px !important; /* Logo ko bada kar diya taake saaf dikhe */
+    max-height:120px !important; /* Logo ko bada kar diya taake saaf dikhe */
     width: auto !important;
     object-fit: contain !important;
   }
