@@ -1894,38 +1894,50 @@ body{
 
   }
 /* ========================================================
-   💥 VELENTRA HEALTH - THE ULTIMATE DRILL-DOWN FIX 💥
+   💥 VELENTRA HEALTH - DRILL-DOWN RIGHT DRAWER & BANNER FIX 💥
    ======================================================== */
 
 @media (max-width: 768px) {
   
+  /* Header Wrapper to fix Banner overlap */
   header, .main-header {
     position: sticky !important;
     top: 0 !important;
     width: 100% !important;
+    height: 85px !important; /* Fixed heightened space taake banner niche push ho */
     background: #ffffff !important;
     z-index: 9999 !important;
     border-bottom: 2px solid #D4AF37 !important;
     box-shadow: 0 3px 12px rgba(0,0,0,.08) !important;
+    display: block !important; /* Multi-layered elements properly wrap hon */
   }
 
+  /* Header Top Bar layout adjustments */
   .header-top {
-    height: 75px !important;
+    height: 100% !important;
     padding: 0 20px !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important; /* Logo center */
     position: relative !important;
     width: 100% !important;
+    background: #ffffff !important;
+  }
+
+  /* Logo positioning and scaling */
+  .header-logo {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
 
   .header-logo img {
-    max-width: 140px !important;
+    max-width: 130px !important; /* Perfect size without bulky extra space */
     height: auto !important;
     display: block !important;
   }
 
-  /* Hamburger Button */
+  /* Hamburger Toggle Button Position (Extreme Right) */
   .menu-toggle {
     display: flex !important;
     flex-direction: column !important;
@@ -1937,7 +1949,7 @@ body{
     background: none !important;
     border: none !important;
     cursor: pointer !important;
-    z-index: 10001 !important;
+    z-index: 10002 !important; /* Kept above everything */
   }
 
   .menu-toggle span {
@@ -1949,7 +1961,7 @@ body{
     transition: all 0.3s ease !important;
   }
 
-  /* Cross (X) Animation */
+  /* Cross (X) Animation toggles */
   .menu-toggle.active span:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px) !important;
   }
@@ -1960,28 +1972,35 @@ body{
     transform: rotate(-45deg) translate(6px, -6px) !important;
   }
 
-  /* 🛠️ FORCE HIDE DEFAULT STATE */
+  /* 🛠️ RIGHT-ALIGNED SIDE DRAWER FIX */
   #navbar {
-    display: none !important; /* Default me menu bilkul gayab rahega */
+    display: flex !important;
     flex-direction: column !important;
     justify-content: flex-start !important;
     align-items: center !important;
     position: fixed !important;
     top: 0 !important;
-    right: 0 !important; 
+    
+    /* Left completely clear karke right boundary check lagayi */
+    left: auto !important; 
+    right: -100% !important; /* Screen se bahar right par chupa hua */
+    
     width: 280px !important;
     height: 100vh !important;
     background: #ffffff !important;
-    padding-top: 90px !important;
+    padding-top: 90px !important; /* Down spacing for links */
     box-shadow: -5px 0 15px rgba(0,0,0,0.1) !important;
-    z-index: 10000 !important;
+    transition: right 0.3s ease-in-out !important; /* Smooth right to left slide */
+    z-index: 10001 !important;
   }
 
-  /* 🛠️ FORCE SHOW ONLY WHEN ACTIVE */
+  /* 🛠️ JAB ACTIVE HO - Tab right zero ho kar samne aaye */
   #navbar.active {
-    display: flex !important; /* Jab class active hogi sirf tabhi samne aayega */
+    right: 0 !important;
+    left: auto !important;
   }
 
+  /* Inside menu link styling updates */
   #navbar a {
     display: block !important;
     width: 100% !important;
@@ -1995,6 +2014,13 @@ body{
   
   #navbar a:last-child {
     border-bottom: none !important;
+  }
+
+  /* 🛠️ FORCE BANNER BANNER TO PUSH DOWN */
+  .hero, .page-banner {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    clear: both !important;
   }
     }
   
