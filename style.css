@@ -1799,3 +1799,56 @@ body{
         width:110px !important;
     }
 }
+/* ===== FINAL HEADER OVERRIDE ===== */
+
+.main-header{
+    position:sticky;
+    top:0;
+    background:#fff;
+    z-index:1000;
+}
+
+.header-top{
+    display:flex !important;
+    justify-content:space-between !important;
+    align-items:center !important;
+    height:70px !important;
+    padding:0 20px !important;
+}
+
+.header-logo img,
+.logo{
+    width:140px !important;
+    height:auto !important;
+}
+
+#navbar{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+@media(max-width:768px){
+
+    .header-top{
+        height:65px !important;
+    }
+
+    .header-logo img,
+    .logo{
+        width:110px !important;
+    }
+
+    .menu-toggle{
+        display:flex !important;
+    }
+
+    #navbar{
+        display:none;
+        flex-direction:column;
+    }
+
+    #navbar.active{
+        display:flex;
+    }
+}
