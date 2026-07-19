@@ -1688,3 +1688,57 @@ body{
 }
 
 }
+/* ===== Mobile Header Final Override ===== */
+
+@media(max-width:768px){
+
+.main-header{
+    height:70px;
+}
+
+.header-top{
+    height:70px;
+    padding:10px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+}
+
+
+.header-logo img{
+    width:150px;
+}
+
+
+/* Show Hamburger */
+
+.menu-toggle{
+    display:flex !important;
+    position:absolute;
+    right:20px;
+    top:23px;
+    flex-direction:column;
+    gap:5px;
+    background:none;
+    border:none;
+    z-index:1001;
+}
+
+
+.menu-toggle span{
+    display:block;
+    width:28px;
+    height:3px;
+    background:#123B6D;
+    border-radius:5px;
+}
+
+
+/* Dropdown Menu */
+
+#navbar{
+    top:70px;
+}
+
+  }
