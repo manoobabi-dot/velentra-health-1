@@ -1767,3 +1767,83 @@ body{
 }
 
 }
+/* ===== CLEAN HEADER ===== */
+
+.main-header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#ffffff;
+    border-bottom:2px solid #D4AF37;
+}
+
+.header-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 25px;
+}
+
+.header-logo{
+    position:static;
+    transform:none;
+}
+
+.header-logo img{
+    width:150px;
+    height:auto;
+    display:block;
+}
+
+.menu-toggle{
+    display:none;
+    background:none;
+    border:none;
+    cursor:pointer;
+}
+
+.menu-toggle span{
+    display:block;
+    width:28px;
+    height:3px;
+    margin:5px 0;
+    background:#123B6D;
+    border-radius:3px;
+}
+
+#navbar{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    padding:15px 20px;
+}
+
+#navbar a{
+    text-decoration:none;
+    color:#123B6D;
+    font-weight:600;
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+    .menu-toggle{
+        display:flex;
+        flex-direction:column;
+    }
+
+    #navbar{
+        display:none;
+    }
+
+    #navbar.active{
+        display:flex;
+        flex-direction:column;
+    }
+
+    .header-logo img{
+        width:120px;
+    }
+  }
