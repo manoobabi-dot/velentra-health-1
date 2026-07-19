@@ -1885,3 +1885,43 @@ body{
     object-fit:unset !important;
     max-height:none !important;
 }
+/* ===== Desktop Header Fix ===== */
+@media (min-width: 769px){
+
+.main-header{
+    position:sticky;
+    top:0;
+    background:#fff;
+    z-index:9999;
+}
+
+.header-top{
+    height:80px !important;
+    display:flex;
+    justify-content:space-between !important;
+    align-items:center;
+    padding:0 40px !important;
+}
+
+.header-logo{
+    position:static !important;
+    transform:none !important;
+}
+
+.header-logo img{
+    width:170px !important;
+    height:auto !important;
+}
+
+#navbar{
+    display:flex !important;
+    justify-content:center;
+    gap:25px;
+    padding:15px 0;
+}
+
+.hero{
+    margin-top:0 !important;
+}
+
+  }
