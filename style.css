@@ -2035,3 +2035,33 @@ header, .main-header, .header-top {
     margin-top: 10px !important; 
 }
   
+/* ========================================================
+   🎯 THE ULTIMATE OVERLAP & IMAGE RESIZE FIX 🎯
+   ======================================================== */
+
+@media (max-width: 768px) {
+  /* 1. Logo image ke upar/neeche ki fuzool space ko zabardasti khinch kar chota karein */
+  .header-logo img, .logo img {
+    max-height: 60px !important; /* Logo ki height lock kar di taake white space block na kare */
+    width: auto !important;
+    object-fit: contain !important;
+    margin-top: -10px !important; /* Logo ko thoda upar adjust karne ke liye */
+  }
+
+  /* 2. Pure header block ko ek fixed jagah par rokhein */
+  header, .main-header {
+    position: relative !important; /* Force layout positioning */
+    height: 90px !important;       /* Clean short height */
+    overflow: visible !important;  /* Menu bahar nikal sake */
+  }
+
+  /* 3. Banner Image ko zabardasti header ke neeche push karein */
+  .hero, .hero-image, .page-banner {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    position: relative !important;
+    top: 0 !important;
+    display: block !important;
+  }
+}
+  
