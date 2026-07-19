@@ -1740,28 +1740,3 @@ body{
 }
 }
 
-@media (max-width:768px){
-
-.header-top{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:12px 20px;
-}
-
-.header-logo{
-    position:static;
-    transform:none;
-}
-
-.header-logo img{
-    width:120px;
-    height:auto;
-}
-
-.menu-toggle{
-    display:flex;
-    flex-direction:column;
-}
-
-      }
