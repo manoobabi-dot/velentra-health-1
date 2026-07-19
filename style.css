@@ -1738,12 +1738,8 @@ body{
 #navbar a:last-child{
     border-bottom:none;
 }
+}
 
-    .logo{
-        width:120px;
-        height:auto;
-    }
-      }
 @media (max-width:768px){
 
 .header-top{
