@@ -395,3 +395,47 @@ section {
     display: block !important;
   }
 }
+/* ========================================================
+   📱 MOBILE BANNER FULL & INNER PAGES SPACING FIX
+   ======================================================== */
+@media (max-width: 768px) {
+  
+  /* 1. RCM aur baqi sub-pages ke banners ko home page ki tarah screen par FULL edge-to-edge karna */
+  .page-banner, 
+  .rcm-services .technology-banner, 
+  header + .page-banner,
+  div[class*="-banner"] {
+    margin-left: -20px !important;  /* Container ki padding ko cross karne ke liye */
+    margin-right: -20px !important;
+    width: calc(100% + 40px) !important; /* Screen ke dono koonon tak full stretch */
+    max-width: none !important;
+  }
+
+  .page-banner img, .hero-image {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+  }
+
+  /* 2. About Us aur baqi pages par sections ke darmiyan jo boht zyada spacing (gap) hai use kam karna */
+  .mission, 
+  .leadership, 
+  .hipaa, 
+  .client-first, 
+  section {
+    padding-top: 20px !important;   /* Oopar ka gap kam kiya */
+    padding-bottom: 20px !important;/* Niche ka gap kam kiya */
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  /* Headings ke oopar aur niche ki faltu space thodi tight karna */
+  h2, .mission h2, .leadership h2, .hipaa h2 {
+    margin-top: 15px !important;
+    margin-bottom: 10px !important;
+  }
+
+  p {
+    margin-bottom: 15px !important;
+  }
+}
