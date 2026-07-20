@@ -2091,4 +2091,19 @@ header, .main-header, .header-top {
     z-index: 10005 !important;        /* 👈 Is se cross button menu ke upar aa jayega aur dikhega */
   }
   }
+  @media (max-width: 768px) {
+  /* 1. Cross button ko sabse upar laane ke liye screen position fixed aur layer super high ki */
+  .menu-toggle {
+    position: fixed !important;  /* Ab yeh layout se hat kar menu ke upar freeze ho jayega */
+    z-index: 10010 !important;   /* Isko menu ki layer (10001) se boht upar kar diya */
+  }
+
+  /* 2. Menu ki length ko mazeed tight aur compact kiya */
+  #navbar {
+    height: auto !important;
+    max-height: 60vh !important;  /* 👈 Length ko aur kam kar diya taake screen ke beech tak hi rahe */
+    padding-top: 75px !important; /* Cross se niche links safely dikhein */
+    box-shadow: -5px 5px 20px rgba(0,0,0,0.15) !important;
+  }
+  }
   
