@@ -612,26 +612,3 @@ html, body {
     object-fit: cover !important;
   }
 }
-/* ========================================================
-   📱 ABOUT PAGE HERO BANNER EXACT HEIGHT & SCALE FIX
-   ======================================================= */
-@media (max-width: 768px) {
-  
-  /* About page ke specific section ko target kar ke spacing set karna */
-  .about-hero,
-  section[class*="about"] img:first-of-type,
-  .hero {
-    height: 220px !important; /* Home page banner ki exact height */
-    overflow: hidden !important;
-  }
-
-  /* Image ko container ke andar perfectly center aur fit karna bina stretch kiye */
-  .about-hero img,
-  .hero-image,
-  .hero img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-    object-position: center !important;
-  }
-}
