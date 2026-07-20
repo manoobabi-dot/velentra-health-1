@@ -523,3 +523,54 @@ section {
 #footer .linkedin-btn i {
     font-size: 18px !important;
 }
+/* ========================================================
+   📱 HORIZONTAL SCROLL / ZOOM-OUT & ALL BANNERS FINAL FIX
+   ======================================================== */
+
+/* 1. Website ko responsive break hone aur automatic zoom-out hone se rokna */
+html, body {
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow-x: hidden !important; /* Koi bhi element screen se baahir nahi bhagega */
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  
+  /* 2. Testimonial track aur sliders ko screen ke andar lock karna (Main Wajah Zoom-out ki) */
+  .testimonial-slider, 
+  .testimonial-track,
+  .container,
+  .services-grid,
+  .features {
+    max-width: 100% !important;
+    overflow: hidden !important;
+  }
+
+  /* 3. HOME, ABOUT, RCM aur BAQI SAB PAGES ke banners ko 100% Barabar (Uniform) karna */
+  .hero,
+  .page-banner,
+  .healthcare-banner,
+  .technology-banner,
+  [class*="-banner"],
+  [class*="hero-section"] {
+    margin-left: -20px !important;  /* Container padding override */
+    margin-right: -20px !important;
+    width: calc(100% + 40px) !important; /* Edge to edge full screen */
+    max-width: none !important;
+    min-width: calc(100% + 40px) !important;
+    display: block !important;
+  }
+
+  /* Banners ki images ko force karna ke woh bilkul screen ke mutabiq fit rahein */
+  .hero img,
+  .hero-image,
+  .page-banner img,
+  [class*="-banner"] img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    object-fit: cover !important;
+  }
+}
