@@ -574,3 +574,41 @@ html, body {
     object-fit: cover !important;
   }
 }
+/* ========================================================
+   📱 ALL PAGES BANNER UNIFORM FULL-WIDTH FIX
+   ======================================================== */
+@media (max-width: 768px) {
+  
+  /* Website ke tamam headers aur main sections ke banners ko home page jaisa karna */
+  .page-banner,
+  .about-banner,
+  .services-banner,
+  .rcm-banner,
+  .contact-banner,
+  header + section,
+  main > section:first-of-type,
+  div[class*="banner"] {
+    margin-left: -20px !important;
+    margin-right: -20px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: calc(100% + 40px) !important;
+    max-width: none !important;
+    min-width: calc(100% + 40px) !important;
+    display: block !important;
+  }
+
+  /* Un tamam banners ke andar mojud images ko responsive full width dena */
+  .page-banner img,
+  .about-banner img,
+  .services-banner img,
+  .rcm-banner img,
+  div[class*="banner"] img,
+  header + section img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    object-fit: cover !important;
+  }
+}
