@@ -1894,62 +1894,7 @@ body{
 
   }
 
-/* ========================================================
-   💻 DESKTOP VIEW FORCE RESET (Laptop Layout Fix)
-   ======================================================== */
-@media (min-width: 769px) {
-  /* Header ki height aur layout standard fix */
-  header, .main-header, .header-top {
-    height: 90px !important; 
-    position: relative !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: space-between !important;
-    background: #ffffff !important;
-    width: 100% !important;
-  }
 
-  /* Logo container ko bada hone se rokna ha */
-  .header-logo, .logo, .navbar-brand {
-    max-width: 220px !important;
-    height: 70px !important;
-    display: flex !important;
-    align-items: center !important;
-  }
-
-  /* 🎯 Logo IMAGE ko zabardasti chota kiya taake screen se bahar na jaye */
-  .header-logo img, .logo img, .navbar-brand img, header img {
-    max-height: 65px !important; 
-    width: auto !important;
-    max-width: 100% !important;
-    display: block !important;
-    object-fit: contain !important;
-  }
-
-  /* Desktop menu horizontal (sidha) dikhe */
-  #navbar {
-    display: flex !important;
-    position: relative !important;
-    top: 0 !important;
-    right: 0 !important;
-    height: auto !important;
-    width: auto !important;
-    background: transparent !important;
-    box-shadow: none !important;
-    flex-direction: row !important;
-  }
-
-  #navbar a {
-    padding: 0 15px !important;
-    border: none !important;
-  }
-
-  /* Desktop par mobile toggle button (blue box) chhup jaye */
-  .menu-toggle {
-    display: none !important;
-  }
-}
-  
 /* ========================================================
    📱 MOBILE VIEW PERFECT FIX (Logo Bada, Menu Compact, Cross Safe)
    ======================================================== */
