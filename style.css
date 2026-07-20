@@ -2038,29 +2038,4 @@ body{
     height: auto !important;
   }
     }
- /* ========================================================
-   💻 DESKTOP ONLY - ULTRA LOGO FIX (Zabardasti Chota Karne Ke Liye)
-   ======================================================== */
-@media (min-width: 769px) {
-  /* Poore page par desktop view me jahan bhi logo image hai, use wrap kiya */
-  img[src*="logo"], 
-  .header-logo img, 
-  .logo img, 
-  .navbar-brand img, 
-  header img {
-    max-height: 65px !important;    /* 👈 Logo ki height ko desktop par lock kar diya */
-    width: auto !important;
-    height: 65px !important;        /* Height force ki taake poori screen par na phaile */
-    max-width: 250px !important;    /* Width ko bhi limit kar diya */
-    display: inline-block !important;
-    object-fit: contain !important;
-  }
-
-  /* Desktop ka header container adjust kiya */
-  header, .main-header, .header-top {
-    height: 90px !important;        /* Header ka normal size */
-    display: flex !important;
-    align-items: center !important;
-  }
-}
-  
+ 
