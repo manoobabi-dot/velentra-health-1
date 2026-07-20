@@ -2077,4 +2077,18 @@ header, .main-header, .header-top {
     border-bottom: 1px solid #f0f0f0 !important;
   }
   }
+  @media (max-width: 768px) {
+  /* 1. Menu ki total length (height) ko screen se hata kar content ke mutabiq auto/fit kiya */
+  #navbar {
+    height: auto !important;          /* 👈 Poori screen jitna lamba ab nahi rahega */
+    max-height: 85vh !important;       /* Max limit set ki agar scrolling chahiye ho */
+    padding-top: 80px !important;     /* Cross button ke liye upar safe space di */
+    border-bottom-left-radius: 12px !important; /* Look clean karne ke liye bottom corner round kiya */
+  }
+
+  /* 2. Cross button ko forced white menu box ke BHI OPAR laya */
+  .menu-toggle {
+    z-index: 10005 !important;        /* 👈 Is se cross button menu ke upar aa jayega aur dikhega */
+  }
+  }
   
