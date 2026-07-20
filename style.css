@@ -2106,4 +2106,28 @@ header, .main-header, .header-top {
     box-shadow: -5px 5px 20px rgba(0,0,0,0.15) !important;
   }
   }
+ @media (max-width: 768px) {
+  /* 1. Menu panel ko header ke bilkul niche se shuru kiya aur fix kiya */
+  #navbar {
+    top: 125px !important;         /* Header ke niche se start ho */
+    height: auto !important;
+    max-height: 65vh !important;   /* Length bilkul fit aur compact */
+    padding-top: 10px !important;  /* Fuzool extra spacing khatam */
+    z-index: 9998 !important;      /* Is layer ko button se niche kiya */
+    position: fixed !important;
+  }
+
+  /* 2. Cross / Hamburger Button ko har haal me sabse upar chamkane ke liye */
+  .menu-toggle {
+    position: fixed !important;    /* Screen par freeze rahega jab menu khule */
+    top: 45px !important;          /* Header ke andar center me align kiya */
+    right: 20px !important;
+    z-index: 10005 !important;     /* 👈 Sabse high layer taake menu ke upar dikhe */
+  }
+
+  /* 3. Cross lines ka color visual check */
+  .menu-toggle span {
+    background: #123B6D !important; /* Blue color taake white background par saaf dikhe */
+  }
+ }
   
