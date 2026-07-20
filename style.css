@@ -1893,7 +1893,82 @@ body{
 }
 
   }
+/* ========================================================
+   💻 ONLY DESKTOP VIEW FIX (Laptop Layout Fix)
+   ======================================================== */
+@media (min-width: 769px) {
+  /* Header container ko proper flex row banaya */
+  header.main-header {
+    height: 90px !important; 
+    position: sticky !important;
+    top: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 0 40px !important; 
+    background: #ffffff !important;
+    width: 100% !important;
+    z-index: 1000 !important;
+  }
 
+  /* Logo container ko pure screen par phailnay se roka */
+  .header-top {
+    height: auto !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    background: transparent !important;
+    position: relative !important;
+    width: auto !important;
+  }
+
+  /* Logo Image ko standard tight size me lock kiya */
+  .header-logo img, .logo img, header img {
+    max-height: 60px !important; 
+    height: 60px !important;
+    width: auto !important;
+    display: block !important;
+    object-fit: contain !important;
+  }
+
+  /* Links ko ek sidhi horizontal line me aligned rakha */
+  #navbar {
+    display: flex !important;
+    position: relative !important;
+    top: 0 !important;
+    left: auto !important;
+    right: auto !important;
+    height: auto !important;
+    width: auto !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    flex-direction: row !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+  }
+
+  #navbar a {
+    display: inline-block !important;
+    width: auto !important;
+    padding: 0 12px !important; 
+    margin-left: 15px !important;
+    border: none !important;
+    text-align: left !important;
+    color: #0B2E59 !important;
+    background: transparent !important;
+  }
+  
+  #navbar a:hover {
+    color: #18A7A7 !important;
+  }
+
+  /* Desktop par mobile ka toggle button invisible rahega */
+  .menu-toggle, #menu-toggle {
+    display: none !important;
+  }
+    }
+  
 
 /* ========================================================
    📱 MOBILE VIEW PERFECT FIX (Logo Bada, Menu Compact, Cross Safe)
@@ -1983,79 +2058,3 @@ body{
     height: auto !important;
   }
     }
-/* ========================================================
-   💻 ONLY DESKTOP VIEW FIX (Laptop Layout Fix)
-   ======================================================== */
-@media (min-width: 769px) {
-  /* Header container ko row layout banaya taake sab ek line me aaye */
-  header.main-header {
-    height: 90px !important; 
-    position: sticky !important;
-    top: 0 !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: space-between !important;
-    padding: 0 40px !important; 
-    background: #ffffff !important;
-    width: 100% !important;
-    z-index: 1000 !important;
-  }
-
-  /* Logo container ko poori screen ghernay se roka[span_1](start_span)[span_1](end_span) */
-  .header-top {
-    height: auto !important;
-    padding: 0 !important;
-    display: flex !important;
-    align-items: center !important;
-    background: transparent !important;
-    position: relative !important;
-    width: auto !important;
-  }
-
-  /* Logo Image ko zabardasti normal standard size me lock kiya */
-  .header-logo img, .logo img, header img {
-    max-height: 60px !important; 
-    height: 60px !important;
-    width: auto !important;
-    display: block !important;
-    object-fit: contain !important;
-  }
-
-  /* Links ko ek sidhi horizontal line me le aaye */
-  #navbar {
-    display: flex !important;
-    position: relative !important;
-    top: 0 !important;
-    left: auto !important;
-    right: auto !important;
-    height: auto !important;
-    width: auto !important;
-    background: transparent !important;
-    box-shadow: none !important;
-    flex-direction: row !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    border-radius: 0 !important;
-  }
-
-  #navbar a {
-    display: inline-block !important;
-    width: auto !important;
-    padding: 0 12px !important; 
-    margin-left: 15px !important;
-    border: none !important;
-    text-align: left !important;
-    color: #0B2E59 !important;
-    background: transparent !important;
-  }
-  
-  #navbar a:hover {
-    color: #18A7A7 !important;
-  }
-
-  /* Desktop par mobile ka blue toggle button invisible rahega[span_2](start_span)[span_2](end_span) */
-  .menu-toggle, #menu-toggle {
-    display: none !important;
-  }
-}
-  
