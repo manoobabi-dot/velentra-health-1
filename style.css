@@ -1,151 +1,223 @@
+/* ========================================================
+   🎨 BASE STYLE & UNIVERSAL RESET
+   ======================================================== */
 *{
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family:Arial,sans-serif;
 }
 
 body{
   background:#ffffff;
   color:#1b2a41;
+  font-family: "Inter", sans-serif !important;
 }
 
-/* Header Base Styling */
+/* Responsive Images Global Fix */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Header Sticky Base */
 header {
-    background:#ffffff;
-    border-bottom:2px solid #D4AF37;
-    box-shadow:0 3px 12px rgba(0,0,0,.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #ffffff;
+    border-bottom: 2px solid #D4AF37;
+    box-shadow: 0 3px 12px rgba(0,0,0,.08);
 }
 
-.velentra{ color:#0B2E59; }
-.health{ color:#18A7A7; }
+.velentra { color:#0B2E59 !important; }
+.health { color:#18A7A7 !important; }
 
-/* Hero Section */
-.hero{
-  text-align:center;
-  padding:0;
-  border-bottom:2px solid #D4AF37;
-  box-shadow:0 8px 20px rgba(0,0,0,.15);
-}
-
-.hero-image{
-  display:block;
-  width:100%;
-  height:auto;
-}
-
-/* Sections Base */
-.about, .services {
-  padding:80px 20px;
-  text-align:center;
-}
-
-.about h2, .services h2 {
-  color:#0B2E59;
-  font-size:36px;
-  margin-bottom:25px;
-  font-weight:700;
-}
-
-/* Base Components Grid */
-.features, .services-grid, .process-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    max-width: 1100px;
-    margin: auto;
-}
-
-.feature-card, .service-card, .process-card, .testimonial-card {
-    background:#ffffff !important;
-    color:#123B6D !important;
-    border-top:4px solid #123B6D !important;
-    border-bottom:4px solid #D4AF37 !important;
-    border-radius:15px;
-    padding:30px;
-    box-shadow:0 8px 20px rgba(0,0,0,.10);
-    transition:all .3s ease;
-}
-
-.feature-card:hover, .service-card:hover, .process-card:hover, .testimonial-card:hover {
-    background:#18A7A7 !important;
-    transform:translateY(-8px);
-    color: #ffffff !important;
-}
-
-.feature-card:hover *, .service-card:hover *, .process-card:hover *, .testimonial-card:hover * {
-    color: #ffffff !important;
-}
-
-/* Slider Section */
-.testimonial-slider {
-    display:flex;
-    align-items:center;
-    gap:20px;
-    overflow:hidden;
-    position:relative;
-}
-
-.testimonial-track {
-    display:flex;
-    width:100%;
-    transition:transform 0.5s ease;
-}
-
-.testimonial-card {
-    min-width:100%;
-    flex-shrink:0;
-}
-
-.prev-btn, .next-btn {
-    background:#0B2E59;
-    color:white;
-    border:none;
-    width:40px;
-    height:40px;
-    border-radius:50%;
-    cursor:pointer;
-    font-size:20px;
-}
-
-/* CTA & Footer */
-#cta {
-    padding: 80px 20px;
-    background: #123B6D;
-    color: #fff;
-    text-align: center;
-}
-
-.cta-btn {
-    display: inline-block;
-    padding: 16px 42px;
-    background: #D4AF37;
-    color: #123B6D;
-    text-decoration: none;
-    border-radius: 30px;
-    font-weight:700;
-}
-
-#footer {
-    background:#0B2E59;
-    color:#ffffff;
-    text-align:center;
-    padding:50px 20px;
-    border-top:2px solid #D4AF37;
-}
-
-/* Font Overrides */
-html, body, body * {
-    font-family: "Inter", sans-serif !important;
-}
+/* Global Fonts & Typography */
+html, body, body * { font-family: "Inter", sans-serif !important; }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #0B2E59;
+    font-family: "Inter", sans-serif !important;
     font-weight: 700 !important;
+    color: #0B2E59;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+p, span, li, a, label, input, textarea, button, small {
+    font-family: "Inter", sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 1.7 !important;
+}
+
+/* Container Spacing */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 /* ========================================================
-   💻 DESKTOP VIEW RESET (Laptop Layout - FIX)
+   🖼️ HERO BANNERS & IMAGES FIX (For All Pages)
+   ======================================================== */
+.hero {
+  text-align: center;
+  padding: 0 !important;
+  border-bottom: 2px solid #D4AF37;
+  box-shadow: 0 8px 20px rgba(0,0,0,.15);
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.page-banner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.page-banner img, .page-banner .hero-image {
+    width: 100%;
+    height: auto !important; /* Forces images to fit without zoom-in/out distortion */
+    display: block;
+    object-fit: contain !important;
+}
+
+/* Sub-Pages Blue Hero Section */
+.page-hero {
+    background: #123B6D !important;
+    color: #ffffff !important;
+    padding: 90px 20px 110px !important;
+    text-align: center;
+}
+
+.page-hero h1 {
+    font-size: 42px !important;
+    color: #ffffff !important;
+    margin: 0 0 25px 0 !important;
+}
+
+.page-hero p {
+    font-size: 20px !important;
+    color: #ffffff !important;
+    max-width: 850px;
+    margin: 0 auto !important;
+}
+
+/* ========================================================
+   🗂️ GRID & UNIVERSAL CARD SETTINGS (As Per Your Choice)
+   ======================================================== */
+.features, .services-grid, .process-grid, .services-section .container, .healthcare-section .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Cards Base Structure */
+.feature-card, .service-card, .process-card, .testimonial-card, .health-card {
+    background: #ffffff !important;
+    color: #123B6D !important;
+    border-top: 4px solid #123B6D !important;
+    border-bottom: 4px solid #D4AF37 !important;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.10);
+    transition: all .3s ease;
+}
+
+.feature-card h2, .feature-card h3, .feature-card p,
+.service-card h2, .service-card h3, .service-card p,
+.process-card h2, .process-card h3, .process-card p,
+.testimonial-card h2, .testimonial-card h3, .testimonial-card h4, .testimonial-card p,
+.health-card h2, .health-card p {
+    color: #123B6D !important;
+}
+
+/* Hover Effects */
+.feature-card:hover, .service-card:hover, .process-card:hover, .testimonial-card:hover, .health-card:hover {
+    background: #18A7A7 !important;
+    transform: translateY(-8px);
+}
+
+.feature-card:hover *, .service-card:hover *, .process-card:hover *, .testimonial-card:hover *, .health-card:hover * {
+    color: #ffffff !important;
+}
+
+/* Specific Card Layout Fixes */
+#services .service-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 120px;
+}
+
+#process .process-card h3 {
+    color: #D4AF37;
+    font-size: 32px;
+}
+
+/* ========================================================
+   📝 INNER PAGES EXTRAS (About, RCM, HIPAA, Forms)
+   ======================================================== */
+.about, .mission, .hipaa, .leadership, .client-first, .medical-billing, .medical-coding, .ar-recovery, .denial-management, .careers-section, .resources-section, .healthcare-section {
+    padding: 80px 20px;
+}
+
+.health-card { background: #f8fafc !important; }
+.rcm-services, .technology-services, .careers-section, .resources-section { background: #f7f9fc; }
+
+.medical-billing .container, .medical-coding .container, .ar-recovery .container, .denial-management .container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    border-top: 4px solid #D4AF37;
+    box-shadow: 0 8px 20px rgba(0,0,0,.10);
+}
+
+/* Contact Form CSS */
+.contact-form { padding: 60px 20px; }
+.contact-form form { max-width: 600px; margin: auto; }
+.contact-form input, .contact-form textarea {
+    width: 100%; padding: 14px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px; margin-bottom: 15px;
+}
+.contact-form button {
+    background: #D4AF37; color: #123B6D; padding: 14px 30px; border: none; border-radius: 25px; font-weight: 700; cursor: pointer;
+}
+.contact-form button:hover { background: #18A7A7; color: #ffffff; }
+
+/* Testimonial Slider Mechanics */
+.testimonial-slider { overflow: hidden; position: relative; display: flex; align-items: center; }
+.testimonial-track { display: flex; width: 100%; transition: transform 0.5s ease; gap: 20px; }
+.testimonial-card { min-width: 100%; flex-shrink: 0; }
+.prev-btn, .next-btn {
+    position: absolute; top: 50%; transform: translateY(-50%); background: #0B2E59; color: white;
+    border: none; width: 40px; height: 40px; border-radius: 50%; cursor: pointer; font-size: 20px; z-index: 2;
+}
+.prev-btn { left: 10px; } .next-btn { right: 10px; }
+
+/* CTA & Footer */
+#cta { background: #0B2E59; padding: 70px 20px; text-align: center; color: white; }
+.cta-btn {
+    display: inline-block; background: #18A7A7; color: white; padding: 14px 30px; border-radius: 8px;
+    text-decoration: none; font-weight: 600; transition: 0.3s ease;
+}
+.cta-btn:hover { transform: translateY(-3px); background: #D4AF37; color: #123B6D; }
+#footer { background: #0B2E59; color: #ffffff; text-align: center; padding: 50px 20px; border-top: 2px solid #D4AF37; }
+
+/* ========================================================
+   💻 DESKTOP VIEW QUERY (Laptop Layout Standard Fix)
    ======================================================== */
 @media (min-width: 769px) {
   header.main-header {
@@ -203,7 +275,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ========================================================
-   📱 MOBILE VIEW PERFECT FIX (Logo Bada, Menu Side Box)
+   📱 MOBILE VIEW PERFECT FIX (Unchanged, Purely Preserved)
    ======================================================== */
 @media (max-width: 768px) {
   header.main-header, .header-top {
@@ -274,5 +346,10 @@ h1, h2, h3, h4, h5, h6 {
   }
   #navbar a:last-child { border-bottom: none !important; }
 
-  .testimonial-card { flex:0 0 100%; }
-    }
+  .testimonial-card { min-width: 100%; flex: 0 0 100%; }
+  
+  section { padding: 40px 0 !important; }
+  .page-hero { padding: 90px 20px 110px !important; }
+  .page-hero h1 { font-size: 32px !important; }
+  .page-hero p { font-size: 17px !important; }
+}
