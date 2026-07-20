@@ -2130,4 +2130,40 @@ header, .main-header, .header-top {
     background: #123B6D !important; /* Blue color taake white background par saaf dikhe */
   }
  }
+  @media (max-width: 768px) {
+  /* 1. Toggle Button ko ek solid rounded button bana diya taake ye har haal me upar dikhe */
+  .menu-toggle {
+    position: fixed !important;    /* Screen par freeze rahega */
+    top: 35px !important;          /* Header ke andar perfect alignment */
+    right: 20px !important;
+    z-index: 10010 !important;     /* Layer ko sabse top par kar diya */
+    background: #123B6D !important; /* Isko dark blue background de diya */
+    padding: 10px !important;      /* Button ke andar space */
+    border-radius: 8px !important; /* Corners round kiye */
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 4px !important;
+    width: 45px !important;
+    height: 40px !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  /* 2. Button ke andar ki lines ko white kar diya taake blue box me saaf nazar aaye */
+  .menu-toggle span {
+    background: #ffffff !important; 
+    width: 22px !important;
+    height: 3px !important;
+    display: block !important;
+  }
+
+  /* 3. Menu panel ko mazeed clean aur button se alag kiya */
+  #navbar {
+    top: 125px !important;         /* Header ke niche se start ho */
+    height: auto !important;
+    max-height: 60vh !important;   /* Tight compact length */
+    z-index: 10000 !important;     /* Iski layer button se niche ha */
+    position: fixed !important;
+  }
+  }
   
