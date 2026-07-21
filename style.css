@@ -612,3 +612,30 @@ html, body {
     object-fit: cover !important;
   }
 }
+/* ========================================================
+   📱 ABOUT BANNER IMAGE FIT & CENTER FIX
+   ======================================================== */
+@media (max-width: 768px) {
+  
+  /* About banner ki container padding aur alignment */
+  .about-hero, 
+  section.about,
+  .about-banner {
+    width: 100% !important;
+    padding: 0 10px !important; /* Left aur right se halka sa gap taake text na kate */
+    box-sizing: border-box !important;
+    text-align: center !important;
+  }
+
+  /* Image ko frame mein center aur perfectly fit rakhna */
+  .about-hero img,
+  .about-banner img,
+  section.about img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    margin: 0 auto !important; /* Center align */
+    object-fit: contain !important; /* Image ka koi hissa ya text nahi katega */
+  }
+}
