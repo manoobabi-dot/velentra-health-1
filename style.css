@@ -612,3 +612,10 @@ html, body {
     object-fit: cover !important;
   }
 }
+.footer a,
+.footer a:visited,
+.footer a:hover,
+.footer a:active {
+    color: #ffffff !important;
+    text-decoration: none;
+}
