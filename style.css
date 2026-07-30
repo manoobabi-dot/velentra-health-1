@@ -619,3 +619,77 @@ html, body {
     color: #ffffff !important;
     text-decoration: none;
 }
+/* ========================================================
+   🎯 UNIFORM HERO BANNERS FIX (ALL PAGES MATCHING HEALTHCARE)
+   ======================================================== */
+
+/* 1. Universal Desktop Rule for All Page Hero Banners */
+.hero,
+.page-banner,
+.about-hero,
+.about-banner,
+.index-banner,
+.healthcare-banner,
+.technology-banner,
+.careers-banner,
+.resources-banner,
+[class*="-banner"],
+[class*="hero"] {
+    width: 100% !important;
+    max-height: 400px !important; /* Standard height for Desktop */
+    overflow: hidden !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 0 !important;
+    background: #ffffff;
+}
+
+/* Force all inner Hero Images to match Healthcare Page style */
+.hero img,
+.hero-image,
+.page-banner img,
+.about-hero img,
+.about-banner img,
+.index-banner img,
+[class*="-banner"] img,
+[class*="hero"] img {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100% !important;
+    display: block !important;
+    object-fit: contain !important; /* Image ka koi part screen se bahar nahi jayega */
+    object-position: center !important;
+    margin: 0 auto !important;
+}
+
+/* 2. Responsive Rule for Mobile Screens (<= 768px) */
+@media (max-width: 768px) {
+  .hero,
+  .page-banner,
+  .about-hero,
+  .about-banner,
+  .index-banner,
+  .healthcare-banner,
+  .technology-banner,
+  .careers-banner,
+  .resources-banner,
+  [class*="-banner"],
+  [class*="hero"] {
+      max-height: 220px !important; /* Uniform Mobile height */
+      min-width: 100% !important;
+  }
+
+  .hero img,
+  .hero-image,
+  .page-banner img,
+  .about-hero img,
+  .about-banner img,
+  .index-banner img,
+  [class*="-banner"] img,
+  [class*="hero"] img {
+      width: 100% !important;
+      height: auto !important;
+      max-height: 220px !important;
+      object-fit: contain !important;
+  }
+}
