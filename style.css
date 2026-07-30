@@ -575,56 +575,53 @@ html, body {
   }
 }
 /* ========================================================
-   🎯 PERFECT UNIFORM FULL-WIDTH BANNERS (ALL PAGES)
+   🛠️ FINAL SAFE RESPONSIVE BANNERS & FOOTER FIX
    ======================================================== */
 
-/* Desktop & Mobile Universal Banner Container */
-.hero,
-.page-banner,
-.about-hero,
-.about-banner,
-.index-banner,
-.healthcare-banner,
-[class*="-banner"],
-[class*="hero"] {
+/* 1. Reset Global Banner Heights & Layout safely */
+.hero, 
+.page-banner, 
+.about-hero, 
+.about-banner {
     width: 100% !important;
     max-width: 100% !important;
     padding: 0 !important;
     margin: 0 !important;
     background: transparent !important;
+    overflow: hidden !important;
 }
 
-/* Force All Banner Images to Stretch Full Width like Index Page */
-.hero img,
-.hero-image,
-.page-banner img,
-.about-hero img,
-.about-banner img,
-.index-banner img,
-[class*="-banner"] img,
-[class*="hero"] img {
+/* 2. Uniform Edge-to-Edge Image Scaling */
+.hero img, 
+.hero-image, 
+.page-banner img, 
+.about-hero img, 
+.about-banner img {
     width: 100% !important;
     max-width: 100% !important;
     height: auto !important;
     display: block !important;
     object-fit: cover !important;
-    margin: 0 !important;
+    margin: 0 auto !important;
 }
 
-/* Mobile Screen Specific Full-Width Expansion */
+/* 3. Mobile Display Expansion Fix (<= 768px) */
 @media (max-width: 768px) {
-  .hero,
-  .page-banner,
-  .about-hero,
-  .about-banner,
-  .index-banner,
-  .healthcare-banner,
-  [class*="-banner"],
-  [class*="hero"] {
+  .hero, 
+  .page-banner, 
+  .about-hero, 
+  .about-banner {
       margin-left: -20px !important;
       margin-right: -20px !important;
       width: calc(100% + 40px) !important;
       max-width: none !important;
   }
-   }
+}
 
+/* 4. Fix Footer Phone Number Color (Preventing Auto-Blue Links) */
+#footer a,
+#footer a[href^="tel:"],
+#footer a[href^="mailto:"] {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
