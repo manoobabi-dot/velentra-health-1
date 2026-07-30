@@ -619,32 +619,3 @@ html, body {
     color: #ffffff !important;
     text-decoration: none;
 }
-/* ========================================================
-   📱 INDEX PAGE HERO BANNER SIZE REDUCTION
-   ======================================================== */
-
-/* Desktop view k liye banner height choti karna */
-.hero, 
-#hero,
-.index-banner {
-    max-height: 400px !important; /* Height aap apne hisab se kam/zyada kar sakti hain */
-    overflow: hidden !important;
-}
-
-.hero img, 
-#hero img,
-.index-banner img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important; /* Image crop nahi hogi aur container mein fit rahegi */
-    object-position: center !important;
-}
-
-/* Mobile view k liye banner height adjust karna */
-@media (max-width: 768px) {
-    .hero, 
-    #hero,
-    .index-banner {
-        max-height: 220px !important; /* Mobile par sleek aur chota dikhane ke liye */
-    }
-}
