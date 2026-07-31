@@ -380,11 +380,7 @@ section {
     line-height: 1.6 !important;
   }
 
-  /* 2. Menu Bar (Navbar) ki spacing aur background */
-  #navbar {
-    padding: 20px !important;
-    background: #ffffff !important;
-  }
+  
 
   /* Menu ke andar ke links ki settings */
   #navbar a {
