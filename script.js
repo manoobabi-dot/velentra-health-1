@@ -3,14 +3,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const navbar = document.getElementById("navbar");
 
     if (menuToggle && navbar) {
-        // 1. Menu open aur close karne ke liye toggle function
+        // Menu open/close
         menuToggle.addEventListener("click", (e) => {
             e.stopPropagation();
             menuToggle.classList.toggle("active");
             navbar.classList.toggle("active");
         });
 
-        // 2. Kisi bhi link par click karte hi menu khud band ho jaye
+        // Link click par menu close
         document.querySelectorAll("#navbar a").forEach(link => {
             link.addEventListener("click", () => {
                 menuToggle.classList.remove("active");
@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
 
-        // 3. Menu ke baahar click karne se menu close ho jaye
+        // Bahar click par menu close
         document.addEventListener("click", (e) => {
             if (!navbar.contains(e.target) && !menuToggle.contains(e.target)) {
                 menuToggle.classList.remove("active");
@@ -26,4 +26,18 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }
+
+    // Service Details Toggle
+    document.querySelectorAll(".details-btn").forEach(button => {
+        button.addEventListener("click", function () {
+            const details = this.nextElementSibling;
+
+            details.classList.toggle("active");
+
+            this.textContent = details.classList.contains("active")
+                ? "Hide Details"
+                : "View Details";
+        });
+    });
+
 });
