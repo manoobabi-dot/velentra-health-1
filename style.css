@@ -489,3 +489,11 @@ html, body {
   max-width: 100%;
   overflow-x: hidden;
 }
+@media (max-width:768px){
+
+.hero-image{
+    height:220px !important;
+    object-fit:cover;
+}
+
+}
