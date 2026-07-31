@@ -679,3 +679,11 @@ a.details-btn:hover {
     background: #18A7A7;
     color: #ffffff !important;
    }
+#navbar a {
+    color: #0B2E59 !important;
+    text-decoration: none !important;
+}
+
+#navbar a:hover {
+    color: #18A7A7 !important;
+}
