@@ -421,22 +421,26 @@ section {
     font-size: 16px !important;
     white-space: normal !important; /* Agar naam lamba ho to khud niche wali line me aa jaye, baahir na nikle */
   }
+/* ALL PAGE BANNERS */
+[class$="-banner"]{
+    width:100%;
+    padding:0 !important;
+    margin:0 !important;
+}
 
-  /* 2. HomePage aur About ke ilawa BAQI TAMAM PAGES ke banners ko full stretch karna */
-  .page-banner,
-  .hero,
-  .healthcare-banner,
-  .technology-banner,
-  .careers-banner,
-  .resources-banner,
-  [class*="-banner"],
-  [class*="hero-section"] {
-    margin-left: -20px !important;  /* Margins ko override kiya */
-    margin-right: -20px !important;
-    width: calc(100% + 40px) !important; /* Screen ke dono koonon tak full touch */
-    max-width: none !important;
-    display: block !important;
-  }
+[class$="-banner"] .container{
+    width:100%;
+    max-width:100%;
+    padding:0 !important;
+    margin:0 !important;
+}
+
+[class$="-banner"] img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
 
   /* Un sub-pages ki images ko force full width dena */
   .page-banner img, 
