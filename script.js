@@ -27,27 +27,3 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
-document.querySelectorAll(".details-btn").forEach(button => {
-    button.addEventListener("click", function () {
-
-        const details = this.nextElementSibling;
-
-        if (details.classList.contains("active")) {
-            details.classList.remove("active");
-            this.textContent = "View Details";
-        } else {
-
-            document.querySelectorAll(".service-details").forEach(item => {
-                item.classList.remove("active");
-            });
-
-            document.querySelectorAll(".details-btn").forEach(btn => {
-                btn.textContent = "View Details";
-            });
-
-            details.classList.add("active");
-            this.textContent = "Hide Details";
-        }
-
-    });
-});
