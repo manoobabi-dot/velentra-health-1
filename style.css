@@ -517,23 +517,3 @@ html, body {
 .details-btn:hover{
     background:#18A7A7;
 }
-
-.service-details{
-    display:none;
-    margin-top:20px;
-    text-align:left;
-    line-height:1.8;
-}
-
-.service-details.active{
-    display:block;
-}
-
-.service-details h4{
-    margin-top:20px;
-    color:#0B2E59;
-}
-
-.service-details ul{
-    padding-left:20px;
-}
