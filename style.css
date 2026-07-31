@@ -89,7 +89,7 @@ section {
     width: 100%;
     height: auto !important; /* Forces images to fit without zoom-in/out distortion */
     display: block;
-    object-fit: contain !important;
+    object-fit: cover !important;
 }
 
 /* Sub-Pages Blue Hero Section */
