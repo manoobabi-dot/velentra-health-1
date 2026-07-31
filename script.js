@@ -24,15 +24,4 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Service Details Toggle
-    document.querySelectorAll(".details-btn").forEach(button => {
-        button.addEventListener("click", function () {
-            const details = this.nextElementSibling;
-
-            details.classList.toggle("active");
-            this.textContent = details.classList.contains("active")
-                ? "Hide Details"
-                : "View Details";
-        });
-    });
-});
+    
