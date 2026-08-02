@@ -679,11 +679,61 @@ a.details-btn:hover {
     background: #18A7A7;
     color: #ffffff !important;
    }
+/* Mobile & Desktop Menu Link Color Fix */
 #navbar a {
     color: #0B2E59 !important;
     text-decoration: none !important;
 }
 
+@media (max-width: 768px) {
+  #navbar a {
+    color: #0B2E59 !important;
+  }
+}
+
 #navbar a:hover {
     color: #18A7A7 !important;
+}
+
+/* ========================================================
+   🏥 PATIENT ONBOARDING SPECIFIC FIXES
+   ======================================================== */
+.onboarding-page-section {
+    padding: 60px 0;
+    width: 100%;
+}
+
+.onboarding-page-section .container {
+    display: block !important;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.lead-text {
+    font-size: 18px !important;
+    line-height: 1.8 !important;
+    color: #1b2a41;
+    max-width: 900px;
+    margin: 0 auto 40px auto !important;
+    text-align: center !important;
+    display: block !important;
+}
+
+.features-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+    gap: 25px !important;
+}
+
+.workflow-steps {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
+    gap: 15px !important;
+}
+
+.benefits-grid {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) !important;
+    gap: 20px !important;
 }
