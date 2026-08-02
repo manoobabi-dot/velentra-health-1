@@ -737,3 +737,19 @@ a.details-btn:hover {
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) !important;
     gap: 20px !important;
 }
+/* Reduce top space below banner/hero image */
+.about, 
+section:first-of-type,
+.onboarding-page-section {
+    padding-top: 30px !important;
+}
+
+/* Mobile responsive padding fix */
+@media (max-width: 768px) {
+    .about, 
+    section,
+    .onboarding-page-section {
+        padding-top: 25px !important;
+        padding-bottom: 30px !important;
+    }
+}
